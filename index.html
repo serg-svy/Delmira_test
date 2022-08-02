@@ -1,1298 +1,1397 @@
 <!DOCTYPE html>
 <html lang="ru">
-	@@include('html/_head.htm',{
-	"title":"Главная"
-	})
-	<body>
-		<div class="wrapper">
-			@@include('html/_header.htm',{})
-			<main class="page">
-				<!-- Меню под шапкою -->
-				<div class="page__menu menu">
-					<div class="menu__container">
-						<!-- Кнопка каталог -->
-						<div class="menu-left-open">
-							<button type="button" class="menu__left-icon-decor"><span></span></button>
-							<button type="button" class="menu__icon-left icon-menu-left"><span></span></button>
-							<div class="menu-left-open--text">Каталог</div>
+
+<head>
+	<title>Главная</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20220802113008">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<a href="" class="header__logo"><img src="img/logo.svg" alt=""></a>
+				<div class="header__search" data-da=".header, 1200">
+					<form action="#" class="search-header">
+						<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Search" class="search-header__input">
+						<button type="submit" class="search-header__button _icon-search"></button>
+					</form>
+				</div>
+				<div class="header__menu-top menu-top">
+					<nav class="menu-top__body">
+						<ul class="menu-top__list">
+							<li class="menu-top__item"><a href="" class="menu-top__link">О нас</a></li>
+							<li class="menu-top__item"><a href="" class="menu-top__link">Доставка и Оплата</a></li>
+							<li class="menu-top__item"><a href="" class="menu-top__link">Контакты</a></li>
+							<select name="form[]" data-class-modif="form">
+								<option value="1" selected data-href="#">Ру</option>
+								<option value="2" data-href="#">md</option>
+							</select>
+						</ul>
+					</nav>
+				</div>
+				<div class="header__actions">
+					<button type="button" class="header__actions-user user"></button>
+					<div class="header__actions-cart cart">
+						<button type="submit" class="cart__icon"></button>
+						<div class="cart-price">
+							<div class="cart-price__sum">0</div>
+							<div class="cart-price__currency">md</div>
 						</div>
-						<!-- Левое меню -->
-						<div class="menu-left menu">
-							<nav class="menu-left__body menu__body">
-								<ul class="menu-left__list menu__list">
-									<li class="menu-left__item"><a href="" class="menu-left__link">Лицо</a></li>
-									<li class="menu-left__item"><a href="" class="menu-left__link">Глаза</a></li>
-									<li class="menu-left__item"><a href="" class="menu-left__link">Брови</a></li>
-									<li class="menu-left__item"><a href="" class="menu-left__link">Губы</a></li>
-									<li class="menu-left__item"><a href="" class="menu-left__link">Кисти</a></li>
-									<li class="menu-left__item"><a href="" class="menu-left__link">Ресницы</a></li>
-									<li class="menu-left__item"><a href="" class="menu-left__link">Волосы</a></li>
-									<li class="menu-left__item"><a href="" class="menu-left__link">Уход за лицом</a></li>
-									<li class="menu-left__item"><a href="" class="menu-left__link">Еще</a></li>
+					</div>
+				</div>
+				<button type="button" class="menu__icon-top icon-menu-top"><span></span></button>
+			</div>
+		</header>
+		<main class="page">
+			<!-- Меню под шапкою -->
+			<div class="page__menu menu">
+				<div class="menu__container">
+					<!-- Кнопка каталог -->
+					<div class="menu-left-open">
+						<button type="button" class="menu__left-icon-decor"><span></span></button>
+						<button type="button" class="menu__icon-left icon-menu-left"><span></span></button>
+						<div class="menu-left-open--text">Каталог</div>
+					</div>
+					<!-- Левое меню -->
+					<div class="menu-left menu">
+						<nav class="menu-left__body menu__body">
+							<ul class="menu-left__list menu__list">
+								<li class="menu-left__item"><a href="" class="menu-left__link">Лицо</a></li>
+								<li class="menu-left__item"><a href="" class="menu-left__link">Глаза</a></li>
+								<li class="menu-left__item"><a href="" class="menu-left__link">Брови</a></li>
+								<li class="menu-left__item"><a href="" class="menu-left__link">Губы</a></li>
+								<li class="menu-left__item"><a href="" class="menu-left__link">Кисти</a></li>
+								<li class="menu-left__item"><a href="" class="menu-left__link">Ресницы</a></li>
+								<li class="menu-left__item"><a href="" class="menu-left__link">Волосы</a></li>
+								<li class="menu-left__item"><a href="" class="menu-left__link">Уход за лицом</a></li>
+								<li class="menu-left__item"><a href="" class="menu-left__link">Еще</a></li>
+							</ul>
+						</nav>
+					</div>
+					<!-- Праве меню -->
+					<div class="menu-right">
+						<nav class="menu-right__body">
+							<ul class="menu-right__list" data-da=".menu-left__list, 479">
+								<li class="menu-right__item"><a href="" class="menu__link">Новинки</a></li>
+								<li class="menu-right__item"><a href="" class="menu__link">Скидки</a></li>
+								<li class="menu-right__item"><a href="" class="menu__link">Бренды</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+			<!--слайдер под шапкой -->
+			<div class="top-slider top__container swiper">
+				<!-- Двигающееся часть слайдера -->
+				<div class="swiper-wrapper">
+					<!-- Слайд -->
+					<div class="top__slide swiper-slide">
+						<div class="top__slide-info">
+							<div class="top__slide-logo">
+								<picture><source data-srcset="img/slider/logo_slide1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/slider/logo_slide1.png" alt=""></picture>
+							</div>
+							<h2 class="top__slide-title">дополнительный объем ваших губ 1</h2>
+							<a href="#" class="top__slide-link">Professional Lip Cream Plump & Care <img data-src="img/arrow-right-black.svg" alt=""></a>
+						</div>
+						<div class="top-slider__img">
+							<picture><source data-srcset="img/slider/test.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/slider/test.png" alt=""></picture>
+						</div>
+					</div>
+					<div class="top__slide swiper-slide">
+						<div class="top__slide-info">
+							<div class="top__slide-logo">
+								<picture><source data-srcset="img/slider/logo_slide1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/slider/logo_slide1.png" alt=""></picture>
+							</div>
+							<h2 class="top__slide-title">дополнительный объем ваших губ 2</h2>
+							<a href="#" class="top__slide-link">Professional Lip Cream Plump & Care <img data-src="img/arrow-right-black.svg" alt=""></a>
+						</div>
+						<div class="too-slider__img">
+							<picture><source data-srcset="img/slider/test.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/slider/test.png" alt=""></picture>
+						</div>
+					</div>
+				</div>
+				<!-- Если нужна пагинация -->
+				<div class="swiper-pagination"></div>
+				<!-- Если нужен скролбар -->
+				<div class="swiper-scrollbar"></div>
+			</div>
+			<!-- Новинки -->
+			<div class="novelties">
+				<div class="novelties__container">
+					<div class="novelties__img">
+						<picture><source data-srcset="img/novelties/woomen1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/novelties/woomen1.png" alt=""></picture>
+					</div>
+					<div class="novelties__content">
+						<h2 class="novelties__title">Новинки</h2>
+						<div class="novelties__link">
+							<a href="#">Перейти к новинкам</a>
+							<img data-src="img/arrow-right-black.svg" alt="">
+						</div>
+						<div class="novelties__cards cards">
+							<div class="card">
+								<div data-tabs class="card-tab">
+									<div class="card-tab__wrapper">
+										<ul data-tabs-titles class="card-tab__navigation">
+											<li class=" _tab-active">
+												<button type="button" class="card-tab__color"><img data-src="img/novelties/colors/1.svg" alt=""></button>
+											</li>
+											<li>
+												<button type="button" class="card-tab__color"><img data-src="img/novelties/colors/2.svg" alt=""></button>
+											</li>
+											<li>
+												<button type="button" class="card-tab__color"><img data-src="img/novelties/colors/3.svg" alt=""></button>
+											</li>
+											<li>
+												<button type="button" class="card-tab__color"><img data-src="img/novelties/colors/4.svg" alt=""></button>
+											</li>
+											<li>
+												<button type="button" class="card-tab__color"><img data-src="img/novelties/colors/5.svg" alt=""></button>
+											</li>
+											<li>
+												<button type="button" class="card-tab__color"><img data-src="img/novelties/colors/6.svg" alt=""></button>
+											</li>
+											<li>
+												<button type="button" class="card-tab__color"><img data-src="img/novelties/colors/7.svg" alt=""></button>
+											</li>
+										</ul>
+										<button type="button" class="card-tab__counter">+6</button>
+									</div>
+									<div data-tabs-body class="card-tab__content">
+										<div class="card-tab__body">
+											<div class="card-tab__body-img">
+												<picture><source data-srcset="img/novelties/images/1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/novelties/images/1.png" alt=""></picture>
+											</div>
+											<div class="card-tab__body-active">
+												<img data-src="img/novelties/colors/1.svg" class="card-tab__body-active--small" alt="">
+												<span class="card-tab__body-active-text">beige</span>
+											</div>
+											<div class="card-tab__body-info">
+												<h2 class="card-tab__body-title">luxvisage</h2>
+												<!-- Нет олд прайса, если нужен добавить и не нужно править стили -->
+												<div class="card-tab__body-price">
+													<div class="card-tab__body-price--new">120 mdl</div>
+													<!-- <div class="card-tab__body-price--old">209 mdl</div> -->
+												</div>
+												<div class="card-tab__body-text">Крем тональный skin evolution soft matte blur effect</div>
+											</div>
+										</div>
+										<div class="card-tab__body">
+											<div class="card-tab__body-img">
+												<picture><source data-srcset="img/novelties/images/2.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/novelties/images/2.png" alt=""></picture>
+											</div>
+											<div class="card-tab__body-active">
+												<img data-src="img/novelties/colors/2.svg" class="card-tab__body-active--small" alt="">
+												<span class="card-tab__body-active-text">beige</span>
+											</div>
+											<div class="card-tab__body-info">
+												<h2 class="card-tab__body-title">luxvisage</h2>
+												<!-- Нет олд прайса, если нужен добавить и не нужно править стили -->
+												<div class="card-tab__body-price">
+													<div class="card-tab__body-price--new">120 mdl</div>
+													<!-- <div class="card-tab__body-price--old">209 mdl</div> -->
+												</div>
+												<div class="card-tab__body-text">Крем тональный skin evolution soft matte blur effect</div>
+											</div>
+										</div>
+										<div class="card-tab__body">
+											<div class="card-tab__body-img">
+												<picture><source data-srcset="img/novelties/images/1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/novelties/images/1.png" alt=""></picture>
+											</div>
+											<div class="card-tab__body-active">
+												<img data-src="img/novelties/colors/3.svg" class="card-tab__body-active--small" alt="">
+												<span class="card-tab__body-active-text">beige</span>
+											</div>
+											<div class="card-tab__body-info">
+												<h2 class="card-tab__body-title">luxvisage</h2>
+												<!-- Нет олд прайса, если нужен добавить и не нужно править стили -->
+												<div class="card-tab__body-price">
+													<div class="card-tab__body-price--new">120 mdl</div>
+													<!-- <div class="card-tab__body-price--old">209 mdl</div> -->
+												</div>
+												<div class="card-tab__body-text">Крем тональный skin evolution soft matte blur effect</div>
+											</div>
+										</div>
+										<div class="card-tab__body">
+											<div class="card-tab__body-img">
+												<picture><source data-srcset="img/novelties/images/2.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/novelties/images/2.png" alt=""></picture>
+											</div>
+											<div class="card-tab__body-active">
+												<img data-src="img/novelties/colors/4.svg" class="card-tab__body-active--small" alt="">
+												<span class="card-tab__body-active-text">beige</span>
+											</div>
+											<div class="card-tab__body-info">
+												<h2 class="card-tab__body-title">luxvisage</h2>
+												<!-- Нет олд прайса, если нужен добавить и не нужно править стили -->
+												<div class="card-tab__body-price">
+													<div class="card-tab__body-price--new">120 mdl</div>
+													<!-- <div class="card-tab__body-price--old">209 mdl</div> -->
+												</div>
+												<div class="card-tab__body-text">Крем тональный skin evolution soft matte blur effect</div>
+											</div>
+										</div>
+										<div class="card-tab__body">
+											<div class="card-tab__body-img">
+												<picture><source data-srcset="img/novelties/images/1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/novelties/images/1.png" alt=""></picture>
+											</div>
+											<div class="card-tab__body-active">
+												<img data-src="img/novelties/colors/5.svg" class="card-tab__body-active--small" alt="">
+												<span class="card-tab__body-active-text">beige</span>
+											</div>
+											<div class="card-tab__body-info">
+												<h2 class="card-tab__body-title">luxvisage</h2>
+												<!-- Нет олд прайса, если нужен добавить и не нужно править стили -->
+												<div class="card-tab__body-price">
+													<div class="card-tab__body-price--new">120 mdl</div>
+													<!-- <div class="card-tab__body-price--old">209 mdl</div> -->
+												</div>
+												<div class="card-tab__body-text">Крем тональный skin evolution soft matte blur effect</div>
+											</div>
+										</div>
+										<div class="card-tab__body">
+											<div class="card-tab__body-img">
+												<picture><source data-srcset="img/novelties/images/2.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/novelties/images/2.png" alt=""></picture>
+											</div>
+											<div class="card-tab__body-active">
+												<img data-src="img/novelties/colors/6.svg" class="card-tab__body-active--small" alt="">
+												<span class="card-tab__body-active-text">beige</span>
+											</div>
+											<div class="card-tab__body-info">
+												<h2 class="card-tab__body-title">luxvisage</h2>
+												<!-- Нет олд прайса, если нужен добавить и не нужно править стили -->
+												<div class="card-tab__body-price">
+													<div class="card-tab__body-price--new">120 mdl</div>
+													<!-- <div class="card-tab__body-price--old">209 mdl</div> -->
+												</div>
+												<div class="card-tab__body-text">Крем тональный skin evolution soft matte blur effect</div>
+											</div>
+										</div>
+										<div class="card-tab__body">
+											<div class="card-tab__body-img">
+												<picture><source data-srcset="img/novelties/images/1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/novelties/images/1.png" alt=""></picture>
+											</div>
+											<div class="card-tab__body-active">
+												<img data-src="img/novelties/colors/7.svg" class="card-tab__body-active--small" alt="">
+												<span class="card-tab__body-active-text">beige</span>
+											</div>
+											<div class="card-tab__body-info">
+												<h2 class="card-tab__body-title">luxvisage</h2>
+												<!-- Нет олд прайса, если нужен добавить и не нужно править стили -->
+												<div class="card-tab__body-price">
+													<div class="card-tab__body-price--new">120 mdl</div>
+													<!-- <div class="card-tab__body-price--old">209 mdl</div> -->
+												</div>
+												<div class="card-tab__body-text">Крем тональный skin evolution soft matte blur effect</div>
+											</div>
+										</div>
+
+									</div>
+								</div>
+							</div>
+							<div class="card">
+								<div data-tabs class="card-tab">
+									<div class="card-tab__wrapper">
+										<ul data-tabs-titles class="card-tab__navigation">
+											<li class=" _tab-active">
+												<button type="button" class="card-tab__color"><img data-src="img/novelties/colors/1.svg" alt=""></button>
+											</li>
+											<li>
+												<button type="button" class="card-tab__color"><img data-src="img/novelties/colors/2.svg" alt=""></button>
+											</li>
+											<li>
+												<button type="button" class="card-tab__color"><img data-src="img/novelties/colors/3.svg" alt=""></button>
+											</li>
+											<li>
+												<button type="button" class="card-tab__color"><img data-src="img/novelties/colors/4.svg" alt=""></button>
+											</li>
+											<li>
+												<button type="button" class="card-tab__color"><img data-src="img/novelties/colors/5.svg" alt=""></button>
+											</li>
+											<li>
+												<button type="button" class="card-tab__color"><img data-src="img/novelties/colors/6.svg" alt=""></button>
+											</li>
+											<li>
+												<button type="button" class="card-tab__color"><img data-src="img/novelties/colors/7.svg" alt=""></button>
+											</li>
+										</ul>
+										<button type="button" class="card-tab__counter">+6</button>
+									</div>
+									<div data-tabs-body class="card-tab__content">
+										<div class="card-tab__body">
+											<div class="card-tab__body-img">
+												<picture><source data-srcset="img/novelties/images/1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/novelties/images/1.png" alt=""></picture>
+											</div>
+											<div class="card-tab__body-active">
+												<img data-src="img/novelties/colors/1.svg" class="card-tab__body-active--small" alt="">
+												<span class="card-tab__body-active-text">beige</span>
+											</div>
+											<div class="card-tab__body-info">
+												<h2 class="card-tab__body-title">luxvisage</h2>
+												<!-- Нет олд прайса, если нужен добавить и не нужно править стили -->
+												<div class="card-tab__body-price">
+													<div class="card-tab__body-price--new">120 mdl</div>
+													<!-- <div class="card-tab__body-price--old">209 mdl</div> -->
+												</div>
+												<div class="card-tab__body-text">Крем тональный skin evolution soft matte blur effect</div>
+											</div>
+										</div>
+										<div class="card-tab__body">
+											<div class="card-tab__body-img">
+												<picture><source data-srcset="img/novelties/images/2.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/novelties/images/2.png" alt=""></picture>
+											</div>
+											<div class="card-tab__body-active">
+												<img data-src="img/novelties/colors/2.svg" class="card-tab__body-active--small" alt="">
+												<span class="card-tab__body-active-text">beige</span>
+											</div>
+											<div class="card-tab__body-info">
+												<h2 class="card-tab__body-title">luxvisage</h2>
+												<!-- Нет олд прайса, если нужен добавить и не нужно править стили -->
+												<div class="card-tab__body-price">
+													<div class="card-tab__body-price--new">120 mdl</div>
+													<!-- <div class="card-tab__body-price--old">209 mdl</div> -->
+												</div>
+												<div class="card-tab__body-text">Крем тональный skin evolution soft matte blur effect</div>
+											</div>
+										</div>
+										<div class="card-tab__body">
+											<div class="card-tab__body-img">
+												<picture><source data-srcset="img/novelties/images/1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/novelties/images/1.png" alt=""></picture>
+											</div>
+											<div class="card-tab__body-active">
+												<img data-src="img/novelties/colors/3.svg" class="card-tab__body-active--small" alt="">
+												<span class="card-tab__body-active-text">beige</span>
+											</div>
+											<div class="card-tab__body-info">
+												<h2 class="card-tab__body-title">luxvisage</h2>
+												<!-- Нет олд прайса, если нужен добавить и не нужно править стили -->
+												<div class="card-tab__body-price">
+													<div class="card-tab__body-price--new">120 mdl</div>
+													<!-- <div class="card-tab__body-price--old">209 mdl</div> -->
+												</div>
+												<div class="card-tab__body-text">Крем тональный skin evolution soft matte blur effect</div>
+											</div>
+										</div>
+										<div class="card-tab__body">
+											<div class="card-tab__body-img">
+												<picture><source data-srcset="img/novelties/images/2.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/novelties/images/2.png" alt=""></picture>
+											</div>
+											<div class="card-tab__body-active">
+												<img data-src="img/novelties/colors/4.svg" class="card-tab__body-active--small" alt="">
+												<span class="card-tab__body-active-text">beige</span>
+											</div>
+											<div class="card-tab__body-info">
+												<h2 class="card-tab__body-title">luxvisage</h2>
+												<!-- Нет олд прайса, если нужен добавить и не нужно править стили -->
+												<div class="card-tab__body-price">
+													<div class="card-tab__body-price--new">120 mdl</div>
+													<!-- <div class="card-tab__body-price--old">209 mdl</div> -->
+												</div>
+												<div class="card-tab__body-text">Крем тональный skin evolution soft matte blur effect</div>
+											</div>
+										</div>
+										<div class="card-tab__body">
+											<div class="card-tab__body-img">
+												<picture><source data-srcset="img/novelties/images/1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/novelties/images/1.png" alt=""></picture>
+											</div>
+											<div class="card-tab__body-active">
+												<img data-src="img/novelties/colors/5.svg" class="card-tab__body-active--small" alt="">
+												<span class="card-tab__body-active-text">beige</span>
+											</div>
+											<div class="card-tab__body-info">
+												<h2 class="card-tab__body-title">luxvisage</h2>
+												<!-- Нет олд прайса, если нужен добавить и не нужно править стили -->
+												<div class="card-tab__body-price">
+													<div class="card-tab__body-price--new">120 mdl</div>
+													<!-- <div class="card-tab__body-price--old">209 mdl</div> -->
+												</div>
+												<div class="card-tab__body-text">Крем тональный skin evolution soft matte blur effect</div>
+											</div>
+										</div>
+										<div class="card-tab__body">
+											<div class="card-tab__body-img">
+												<picture><source data-srcset="img/novelties/images/2.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/novelties/images/2.png" alt=""></picture>
+											</div>
+											<div class="card-tab__body-active">
+												<img data-src="img/novelties/colors/6.svg" class="card-tab__body-active--small" alt="">
+												<span class="card-tab__body-active-text">beige</span>
+											</div>
+											<div class="card-tab__body-info">
+												<h2 class="card-tab__body-title">luxvisage</h2>
+												<!-- Нет олд прайса, если нужен добавить и не нужно править стили -->
+												<div class="card-tab__body-price">
+													<div class="card-tab__body-price--new">120 mdl</div>
+													<!-- <div class="card-tab__body-price--old">209 mdl</div> -->
+												</div>
+												<div class="card-tab__body-text">Крем тональный skin evolution soft matte blur effect</div>
+											</div>
+										</div>
+										<div class="card-tab__body">
+											<div class="card-tab__body-img">
+												<picture><source data-srcset="img/novelties/images/1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/novelties/images/1.png" alt=""></picture>
+											</div>
+											<div class="card-tab__body-active">
+												<img data-src="img/novelties/colors/7.svg" class="card-tab__body-active--small" alt="">
+												<span class="card-tab__body-active-text">beige</span>
+											</div>
+											<div class="card-tab__body-info">
+												<h2 class="card-tab__body-title">luxvisage</h2>
+												<!-- Нет олд прайса, если нужен добавить и не нужно править стили -->
+												<div class="card-tab__body-price">
+													<div class="card-tab__body-price--new">120 mdl</div>
+													<!-- <div class="card-tab__body-price--old">209 mdl</div> -->
+												</div>
+												<div class="card-tab__body-text">Крем тональный skin evolution soft matte blur effect</div>
+											</div>
+										</div>
+
+									</div>
+								</div>
+							</div>
+							<div class="card">
+								<div data-tabs class="card-tab">
+									<div class="card-tab__wrapper">
+										<ul data-tabs-titles class="card-tab__navigation">
+											<li class=" _tab-active">
+												<button type="button" class="card-tab__color"><img data-src="img/novelties/colors/1.svg" alt=""></button>
+											</li>
+											<li>
+												<button type="button" class="card-tab__color"><img data-src="img/novelties/colors/2.svg" alt=""></button>
+											</li>
+											<li>
+												<button type="button" class="card-tab__color"><img data-src="img/novelties/colors/3.svg" alt=""></button>
+											</li>
+											<li>
+												<button type="button" class="card-tab__color"><img data-src="img/novelties/colors/4.svg" alt=""></button>
+											</li>
+											<li>
+												<button type="button" class="card-tab__color"><img data-src="img/novelties/colors/5.svg" alt=""></button>
+											</li>
+											<li>
+												<button type="button" class="card-tab__color"><img data-src="img/novelties/colors/6.svg" alt=""></button>
+											</li>
+											<li>
+												<button type="button" class="card-tab__color"><img data-src="img/novelties/colors/7.svg" alt=""></button>
+											</li>
+										</ul>
+										<button type="button" class="card-tab__counter">+6</button>
+									</div>
+									<div data-tabs-body class="card-tab__content">
+										<div class="card-tab__body">
+											<div class="card-tab__body-img">
+												<picture><source data-srcset="img/novelties/images/1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/novelties/images/1.png" alt=""></picture>
+											</div>
+											<div class="card-tab__body-active">
+												<img data-src="img/novelties/colors/1.svg" class="card-tab__body-active--small" alt="">
+												<span class="card-tab__body-active-text">beige</span>
+											</div>
+											<div class="card-tab__body-info">
+												<h2 class="card-tab__body-title">luxvisage</h2>
+												<!-- Нет олд прайса, если нужен добавить и не нужно править стили -->
+												<div class="card-tab__body-price">
+													<div class="card-tab__body-price--new">120 mdl</div>
+													<!-- <div class="card-tab__body-price--old">209 mdl</div> -->
+												</div>
+												<div class="card-tab__body-text">Крем тональный skin evolution soft matte blur effect</div>
+											</div>
+										</div>
+										<div class="card-tab__body">
+											<div class="card-tab__body-img">
+												<picture><source data-srcset="img/novelties/images/2.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/novelties/images/2.png" alt=""></picture>
+											</div>
+											<div class="card-tab__body-active">
+												<img data-src="img/novelties/colors/2.svg" class="card-tab__body-active--small" alt="">
+												<span class="card-tab__body-active-text">beige</span>
+											</div>
+											<div class="card-tab__body-info">
+												<h2 class="card-tab__body-title">luxvisage</h2>
+												<!-- Нет олд прайса, если нужен добавить и не нужно править стили -->
+												<div class="card-tab__body-price">
+													<div class="card-tab__body-price--new">120 mdl</div>
+													<!-- <div class="card-tab__body-price--old">209 mdl</div> -->
+												</div>
+												<div class="card-tab__body-text">Крем тональный skin evolution soft matte blur effect</div>
+											</div>
+										</div>
+										<div class="card-tab__body">
+											<div class="card-tab__body-img">
+												<picture><source data-srcset="img/novelties/images/1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/novelties/images/1.png" alt=""></picture>
+											</div>
+											<div class="card-tab__body-active">
+												<img data-src="img/novelties/colors/3.svg" class="card-tab__body-active--small" alt="">
+												<span class="card-tab__body-active-text">beige</span>
+											</div>
+											<div class="card-tab__body-info">
+												<h2 class="card-tab__body-title">luxvisage</h2>
+												<!-- Нет олд прайса, если нужен добавить и не нужно править стили -->
+												<div class="card-tab__body-price">
+													<div class="card-tab__body-price--new">120 mdl</div>
+													<!-- <div class="card-tab__body-price--old">209 mdl</div> -->
+												</div>
+												<div class="card-tab__body-text">Крем тональный skin evolution soft matte blur effect</div>
+											</div>
+										</div>
+										<div class="card-tab__body">
+											<div class="card-tab__body-img">
+												<picture><source data-srcset="img/novelties/images/2.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/novelties/images/2.png" alt=""></picture>
+											</div>
+											<div class="card-tab__body-active">
+												<img data-src="img/novelties/colors/4.svg" class="card-tab__body-active--small" alt="">
+												<span class="card-tab__body-active-text">beige</span>
+											</div>
+											<div class="card-tab__body-info">
+												<h2 class="card-tab__body-title">luxvisage</h2>
+												<!-- Нет олд прайса, если нужен добавить и не нужно править стили -->
+												<div class="card-tab__body-price">
+													<div class="card-tab__body-price--new">120 mdl</div>
+													<!-- <div class="card-tab__body-price--old">209 mdl</div> -->
+												</div>
+												<div class="card-tab__body-text">Крем тональный skin evolution soft matte blur effect</div>
+											</div>
+										</div>
+										<div class="card-tab__body">
+											<div class="card-tab__body-img">
+												<picture><source data-srcset="img/novelties/images/1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/novelties/images/1.png" alt=""></picture>
+											</div>
+											<div class="card-tab__body-active">
+												<img data-src="img/novelties/colors/5.svg" class="card-tab__body-active--small" alt="">
+												<span class="card-tab__body-active-text">beige</span>
+											</div>
+											<div class="card-tab__body-info">
+												<h2 class="card-tab__body-title">luxvisage</h2>
+												<!-- Нет олд прайса, если нужен добавить и не нужно править стили -->
+												<div class="card-tab__body-price">
+													<div class="card-tab__body-price--new">120 mdl</div>
+													<!-- <div class="card-tab__body-price--old">209 mdl</div> -->
+												</div>
+												<div class="card-tab__body-text">Крем тональный skin evolution soft matte blur effect</div>
+											</div>
+										</div>
+										<div class="card-tab__body">
+											<div class="card-tab__body-img">
+												<picture><source data-srcset="img/novelties/images/2.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/novelties/images/2.png" alt=""></picture>
+											</div>
+											<div class="card-tab__body-active">
+												<img data-src="img/novelties/colors/6.svg" class="card-tab__body-active--small" alt="">
+												<span class="card-tab__body-active-text">beige</span>
+											</div>
+											<div class="card-tab__body-info">
+												<h2 class="card-tab__body-title">luxvisage</h2>
+												<!-- Нет олд прайса, если нужен добавить и не нужно править стили -->
+												<div class="card-tab__body-price">
+													<div class="card-tab__body-price--new">120 mdl</div>
+													<!-- <div class="card-tab__body-price--old">209 mdl</div> -->
+												</div>
+												<div class="card-tab__body-text">Крем тональный skin evolution soft matte blur effect</div>
+											</div>
+										</div>
+										<div class="card-tab__body">
+											<div class="card-tab__body-img">
+												<picture><source data-srcset="img/novelties/images/1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/novelties/images/1.png" alt=""></picture>
+											</div>
+											<div class="card-tab__body-active">
+												<img data-src="img/novelties/colors/7.svg" class="card-tab__body-active--small" alt="">
+												<span class="card-tab__body-active-text">beige</span>
+											</div>
+											<div class="card-tab__body-info">
+												<h2 class="card-tab__body-title">luxvisage</h2>
+												<!-- Нет олд прайса, если нужен добавить и не нужно править стили -->
+												<div class="card-tab__body-price">
+													<div class="card-tab__body-price--new">120 mdl</div>
+													<!-- <div class="card-tab__body-price--old">209 mdl</div> -->
+												</div>
+												<div class="card-tab__body-text">Крем тональный skin evolution soft matte blur effect</div>
+											</div>
+										</div>
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Специальные предложения -->
+			<div class="special">
+				<div class="special__container">
+					<h2 class="special__title">Специальные предложения</h2>
+					<div class="special__descr">
+						<div class="special__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+						<div class="special__link">
+							<button type="submit" class="button">Перейти к спецпредложениям</button>
+							<img data-src="img/arrow-right-black.svg" alt="">
+						</div>
+					</div>
+					<div class="special__cards cards">
+						<div class="card">
+							<div data-tabs class="card-tab">
+								<div class="card-tab__wrapper">
+									<ul data-tabs-titles class="card-tab__navigation">
+										<li class=" _tab-active">
+											<button type="button" class="card-tab__color"><img data-src="img/novelties/colors/1.svg" alt=""></button>
+										</li>
+										<li>
+											<button type="button" class="card-tab__color"><img data-src="img/novelties/colors/2.svg" alt=""></button>
+										</li>
+										<li>
+											<button type="button" class="card-tab__color"><img data-src="img/novelties/colors/3.svg" alt=""></button>
+										</li>
+										<li>
+											<button type="button" class="card-tab__color"><img data-src="img/novelties/colors/4.svg" alt=""></button>
+										</li>
+										<li>
+											<button type="button" class="card-tab__color"><img data-src="img/novelties/colors/5.svg" alt=""></button>
+										</li>
+										<li>
+											<button type="button" class="card-tab__color"><img data-src="img/novelties/colors/6.svg" alt=""></button>
+										</li>
+										<li>
+											<button type="button" class="card-tab__color"><img data-src="img/novelties/colors/7.svg" alt=""></button>
+										</li>
+									</ul>
+									<button type="button" class="card-tab__counter">+6</button>
+								</div>
+								<div data-tabs-body class="card-tab__content">
+									<div class="card-tab__body">
+										<div class="card-tab__body-img">
+											<picture><source data-srcset="img/novelties/images/1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/novelties/images/1.png" alt=""></picture>
+										</div>
+										<div class="card-tab__body-active">
+											<img data-src="img/novelties/colors/1.svg" class="card-tab__body-active--small" alt="">
+											<span class="card-tab__body-active-text">beige</span>
+										</div>
+										<div class="card-tab__body-info card-tab__body-info--special">
+											<h2 class="card-tab__body-title">luxvisage</h2>
+											<!-- Прайс со скидкой -->
+											<div class="card-tab__body-price">
+												<div class="card-tab__body-price--new">120 mdl</div>
+												<div class="card-tab__body-price--old">209 mdl</div>
+											</div>
+											<div class="card-tab__body-text">Крем тональный skin evolution soft matte blur effect</div>
+										</div>
+									</div>
+									<div class="card-tab__body">
+										<div class="card-tab__body-img">
+											<picture><source data-srcset="img/novelties/images/2.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/novelties/images/2.png" alt=""></picture>
+										</div>
+										<div class="card-tab__body-active">
+											<img data-src="img/novelties/colors/2.svg" class="card-tab__body-active--small" alt="">
+											<span class="card-tab__body-active-text">beige</span>
+										</div>
+										<div class="card-tab__body-info card-tab__body-info--special">
+											<h2 class="card-tab__body-title">luxvisage</h2>
+											<!-- Прайс со скидкой -->
+											<div class="card-tab__body-price">
+												<div class="card-tab__body-price--new">120 mdl</div>
+												<div class="card-tab__body-price--old">209 mdl</div>
+											</div>
+											<div class="card-tab__body-text">Крем тональный skin evolution soft matte blur effect</div>
+										</div>
+									</div>
+									<div class="card-tab__body">
+										<div class="card-tab__body-img">
+											<picture><source data-srcset="img/novelties/images/1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/novelties/images/1.png" alt=""></picture>
+										</div>
+										<div class="card-tab__body-active">
+											<img data-src="img/novelties/colors/3.svg" class="card-tab__body-active--small" alt="">
+											<span class="card-tab__body-active-text">beige</span>
+										</div>
+										<div class="card-tab__body-info card-tab__body-info--special">
+											<h2 class="card-tab__body-title">luxvisage</h2>
+											<!-- Прайс со скидкой -->
+											<div class="card-tab__body-price">
+												<div class="card-tab__body-price--new">120 mdl</div>
+												<div class="card-tab__body-price--old">209 mdl</div>
+											</div>
+											<div class="card-tab__body-text">Крем тональный skin evolution soft matte blur effect</div>
+										</div>
+									</div>
+									<div class="card-tab__body">
+										<div class="card-tab__body-img">
+											<picture><source data-srcset="img/novelties/images/2.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/novelties/images/2.png" alt=""></picture>
+										</div>
+										<div class="card-tab__body-active">
+											<img data-src="img/novelties/colors/4.svg" class="card-tab__body-active--small" alt="">
+											<span class="card-tab__body-active-text">beige</span>
+										</div>
+										<div class="card-tab__body-info card-tab__body-info--special">
+											<h2 class="card-tab__body-title">luxvisage</h2>
+											<!-- Прайс со скидкой -->
+											<div class="card-tab__body-price">
+												<div class="card-tab__body-price--new">120 mdl</div>
+												<div class="card-tab__body-price--old">209 mdl</div>
+											</div>
+											<div class="card-tab__body-text">Крем тональный skin evolution soft matte blur effect</div>
+										</div>
+									</div>
+									<div class="card-tab__body">
+										<div class="card-tab__body-img">
+											<picture><source data-srcset="img/novelties/images/1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/novelties/images/1.png" alt=""></picture>
+										</div>
+										<div class="card-tab__body-active">
+											<img data-src="img/novelties/colors/5.svg" class="card-tab__body-active--small" alt="">
+											<span class="card-tab__body-active-text">beige</span>
+										</div>
+										<div class="card-tab__body-info card-tab__body-info--special">
+											<h2 class="card-tab__body-title">luxvisage</h2>
+											<!-- Прайс со скидкой -->
+											<div class="card-tab__body-price">
+												<div class="card-tab__body-price--new">120 mdl</div>
+												<div class="card-tab__body-price--old">209 mdl</div>
+											</div>
+											<div class="card-tab__body-text">Крем тональный skin evolution soft matte blur effect</div>
+										</div>
+									</div>
+									<div class="card-tab__body">
+										<div class="card-tab__body-img">
+											<picture><source data-srcset="img/novelties/images/2.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/novelties/images/2.png" alt=""></picture>
+										</div>
+										<div class="card-tab__body-active">
+											<img data-src="img/novelties/colors/6.svg" class="card-tab__body-active--small" alt="">
+											<span class="card-tab__body-active-text">beige</span>
+										</div>
+										<div class="card-tab__body-info card-tab__body-info--special">
+											<h2 class="card-tab__body-title">luxvisage</h2>
+											<!-- Прайс со скидкой -->
+											<div class="card-tab__body-price">
+												<div class="card-tab__body-price--new">120 mdl</div>
+												<div class="card-tab__body-price--old">209 mdl</div>
+											</div>
+											<div class="card-tab__body-text">Крем тональный skin evolution soft matte blur effect</div>
+										</div>
+									</div>
+									<div class="card-tab__body">
+										<div class="card-tab__body-img">
+											<picture><source data-srcset="img/novelties/images/1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/novelties/images/1.png" alt=""></picture>
+										</div>
+										<div class="card-tab__body-active">
+											<img data-src="img/novelties/colors/7.svg" class="card-tab__body-active--small" alt="">
+											<span class="card-tab__body-active-text">beige</span>
+										</div>
+										<div class="card-tab__body-info card-tab__body-info--special">
+											<h2 class="card-tab__body-title">luxvisage</h2>
+											<!-- Прайс со скидкой -->
+											<div class="card-tab__body-price">
+												<div class="card-tab__body-price--new">120 mdl</div>
+												<div class="card-tab__body-price--old">209 mdl</div>
+											</div>
+											<div class="card-tab__body-text">Крем тональный skin evolution soft matte blur effect</div>
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<div data-tabs class="card-tab">
+								<div class="card-tab__wrapper">
+									<ul data-tabs-titles class="card-tab__navigation">
+										<li class=" _tab-active">
+											<button type="button" class="card-tab__color"><img data-src="img/novelties/colors/1.svg" alt=""></button>
+										</li>
+										<li>
+											<button type="button" class="card-tab__color"><img data-src="img/novelties/colors/2.svg" alt=""></button>
+										</li>
+										<li>
+											<button type="button" class="card-tab__color"><img data-src="img/novelties/colors/3.svg" alt=""></button>
+										</li>
+										<li>
+											<button type="button" class="card-tab__color"><img data-src="img/novelties/colors/4.svg" alt=""></button>
+										</li>
+										<li>
+											<button type="button" class="card-tab__color"><img data-src="img/novelties/colors/5.svg" alt=""></button>
+										</li>
+										<li>
+											<button type="button" class="card-tab__color"><img data-src="img/novelties/colors/6.svg" alt=""></button>
+										</li>
+										<li>
+											<button type="button" class="card-tab__color"><img data-src="img/novelties/colors/7.svg" alt=""></button>
+										</li>
+									</ul>
+									<button type="button" class="card-tab__counter">+6</button>
+								</div>
+								<div data-tabs-body class="card-tab__content">
+									<div class="card-tab__body">
+										<div class="card-tab__body-img">
+											<picture><source data-srcset="img/novelties/images/1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/novelties/images/1.png" alt=""></picture>
+										</div>
+										<div class="card-tab__body-active">
+											<img data-src="img/novelties/colors/1.svg" class="card-tab__body-active--small" alt="">
+											<span class="card-tab__body-active-text">beige</span>
+										</div>
+										<div class="card-tab__body-info card-tab__body-info--special">
+											<h2 class="card-tab__body-title">luxvisage</h2>
+											<!-- Прайс со скидкой -->
+											<div class="card-tab__body-price">
+												<div class="card-tab__body-price--new">120 mdl</div>
+												<div class="card-tab__body-price--old">209 mdl</div>
+											</div>
+											<div class="card-tab__body-text">Крем тональный skin evolution soft matte blur effect</div>
+										</div>
+									</div>
+									<div class="card-tab__body">
+										<div class="card-tab__body-img">
+											<picture><source data-srcset="img/novelties/images/2.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/novelties/images/2.png" alt=""></picture>
+										</div>
+										<div class="card-tab__body-active">
+											<img data-src="img/novelties/colors/2.svg" class="card-tab__body-active--small" alt="">
+											<span class="card-tab__body-active-text">beige</span>
+										</div>
+										<div class="card-tab__body-info card-tab__body-info--special">
+											<h2 class="card-tab__body-title">luxvisage</h2>
+											<!-- Прайс со скидкой -->
+											<div class="card-tab__body-price">
+												<div class="card-tab__body-price--new">120 mdl</div>
+												<div class="card-tab__body-price--old">209 mdl</div>
+											</div>
+											<div class="card-tab__body-text">Крем тональный skin evolution soft matte blur effect</div>
+										</div>
+									</div>
+									<div class="card-tab__body">
+										<div class="card-tab__body-img">
+											<picture><source data-srcset="img/novelties/images/1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/novelties/images/1.png" alt=""></picture>
+										</div>
+										<div class="card-tab__body-active">
+											<img data-src="img/novelties/colors/3.svg" class="card-tab__body-active--small" alt="">
+											<span class="card-tab__body-active-text">beige</span>
+										</div>
+										<div class="card-tab__body-info card-tab__body-info--special">
+											<h2 class="card-tab__body-title">luxvisage</h2>
+											<!-- Прайс со скидкой -->
+											<div class="card-tab__body-price">
+												<div class="card-tab__body-price--new">120 mdl</div>
+												<div class="card-tab__body-price--old">209 mdl</div>
+											</div>
+											<div class="card-tab__body-text">Крем тональный skin evolution soft matte blur effect</div>
+										</div>
+									</div>
+									<div class="card-tab__body">
+										<div class="card-tab__body-img">
+											<picture><source data-srcset="img/novelties/images/2.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/novelties/images/2.png" alt=""></picture>
+										</div>
+										<div class="card-tab__body-active">
+											<img data-src="img/novelties/colors/4.svg" class="card-tab__body-active--small" alt="">
+											<span class="card-tab__body-active-text">beige</span>
+										</div>
+										<div class="card-tab__body-info card-tab__body-info--special">
+											<h2 class="card-tab__body-title">luxvisage</h2>
+											<!-- Прайс со скидкой -->
+											<div class="card-tab__body-price">
+												<div class="card-tab__body-price--new">120 mdl</div>
+												<div class="card-tab__body-price--old">209 mdl</div>
+											</div>
+											<div class="card-tab__body-text">Крем тональный skin evolution soft matte blur effect</div>
+										</div>
+									</div>
+									<div class="card-tab__body">
+										<div class="card-tab__body-img">
+											<picture><source data-srcset="img/novelties/images/1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/novelties/images/1.png" alt=""></picture>
+										</div>
+										<div class="card-tab__body-active">
+											<img data-src="img/novelties/colors/5.svg" class="card-tab__body-active--small" alt="">
+											<span class="card-tab__body-active-text">beige</span>
+										</div>
+										<div class="card-tab__body-info card-tab__body-info--special">
+											<h2 class="card-tab__body-title">luxvisage</h2>
+											<!-- Прайс со скидкой -->
+											<div class="card-tab__body-price">
+												<div class="card-tab__body-price--new">120 mdl</div>
+												<div class="card-tab__body-price--old">209 mdl</div>
+											</div>
+											<div class="card-tab__body-text">Крем тональный skin evolution soft matte blur effect</div>
+										</div>
+									</div>
+									<div class="card-tab__body">
+										<div class="card-tab__body-img">
+											<picture><source data-srcset="img/novelties/images/2.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/novelties/images/2.png" alt=""></picture>
+										</div>
+										<div class="card-tab__body-active">
+											<img data-src="img/novelties/colors/6.svg" class="card-tab__body-active--small" alt="">
+											<span class="card-tab__body-active-text">beige</span>
+										</div>
+										<div class="card-tab__body-info card-tab__body-info--special">
+											<h2 class="card-tab__body-title">luxvisage</h2>
+											<!-- Прайс со скидкой -->
+											<div class="card-tab__body-price">
+												<div class="card-tab__body-price--new">120 mdl</div>
+												<div class="card-tab__body-price--old">209 mdl</div>
+											</div>
+											<div class="card-tab__body-text">Крем тональный skin evolution soft matte blur effect</div>
+										</div>
+									</div>
+									<div class="card-tab__body">
+										<div class="card-tab__body-img">
+											<picture><source data-srcset="img/novelties/images/1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/novelties/images/1.png" alt=""></picture>
+										</div>
+										<div class="card-tab__body-active">
+											<img data-src="img/novelties/colors/7.svg" class="card-tab__body-active--small" alt="">
+											<span class="card-tab__body-active-text">beige</span>
+										</div>
+										<div class="card-tab__body-info card-tab__body-info--special">
+											<h2 class="card-tab__body-title">luxvisage</h2>
+											<!-- Прайс со скидкой -->
+											<div class="card-tab__body-price">
+												<div class="card-tab__body-price--new">120 mdl</div>
+												<div class="card-tab__body-price--old">209 mdl</div>
+											</div>
+											<div class="card-tab__body-text">Крем тональный skin evolution soft matte blur effect</div>
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<div data-tabs class="card-tab">
+								<div class="card-tab__wrapper">
+									<ul data-tabs-titles class="card-tab__navigation">
+										<li class=" _tab-active">
+											<button type="button" class="card-tab__color"><img data-src="img/novelties/colors/1.svg" alt=""></button>
+										</li>
+										<li>
+											<button type="button" class="card-tab__color"><img data-src="img/novelties/colors/2.svg" alt=""></button>
+										</li>
+										<li>
+											<button type="button" class="card-tab__color"><img data-src="img/novelties/colors/3.svg" alt=""></button>
+										</li>
+										<li>
+											<button type="button" class="card-tab__color"><img data-src="img/novelties/colors/4.svg" alt=""></button>
+										</li>
+										<li>
+											<button type="button" class="card-tab__color"><img data-src="img/novelties/colors/5.svg" alt=""></button>
+										</li>
+										<li>
+											<button type="button" class="card-tab__color"><img data-src="img/novelties/colors/6.svg" alt=""></button>
+										</li>
+										<li>
+											<button type="button" class="card-tab__color"><img data-src="img/novelties/colors/7.svg" alt=""></button>
+										</li>
+									</ul>
+									<button type="button" class="card-tab__counter">+6</button>
+								</div>
+								<div data-tabs-body class="card-tab__content">
+									<div class="card-tab__body">
+										<div class="card-tab__body-img">
+											<picture><source data-srcset="img/novelties/images/1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/novelties/images/1.png" alt=""></picture>
+										</div>
+										<div class="card-tab__body-active">
+											<img data-src="img/novelties/colors/1.svg" class="card-tab__body-active--small" alt="">
+											<span class="card-tab__body-active-text">beige</span>
+										</div>
+										<div class="card-tab__body-info card-tab__body-info--special">
+											<h2 class="card-tab__body-title">luxvisage</h2>
+											<!-- Прайс со скидкой -->
+											<div class="card-tab__body-price">
+												<div class="card-tab__body-price--new">120 mdl</div>
+												<div class="card-tab__body-price--old">209 mdl</div>
+											</div>
+											<div class="card-tab__body-text">Крем тональный skin evolution soft matte blur effect</div>
+										</div>
+									</div>
+									<div class="card-tab__body">
+										<div class="card-tab__body-img">
+											<picture><source data-srcset="img/novelties/images/2.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/novelties/images/2.png" alt=""></picture>
+										</div>
+										<div class="card-tab__body-active">
+											<img data-src="img/novelties/colors/2.svg" class="card-tab__body-active--small" alt="">
+											<span class="card-tab__body-active-text">beige</span>
+										</div>
+										<div class="card-tab__body-info card-tab__body-info--special">
+											<h2 class="card-tab__body-title">luxvisage</h2>
+											<!-- Прайс со скидкой -->
+											<div class="card-tab__body-price">
+												<div class="card-tab__body-price--new">120 mdl</div>
+												<div class="card-tab__body-price--old">209 mdl</div>
+											</div>
+											<div class="card-tab__body-text">Крем тональный skin evolution soft matte blur effect</div>
+										</div>
+									</div>
+									<div class="card-tab__body">
+										<div class="card-tab__body-img">
+											<picture><source data-srcset="img/novelties/images/1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/novelties/images/1.png" alt=""></picture>
+										</div>
+										<div class="card-tab__body-active">
+											<img data-src="img/novelties/colors/3.svg" class="card-tab__body-active--small" alt="">
+											<span class="card-tab__body-active-text">beige</span>
+										</div>
+										<div class="card-tab__body-info card-tab__body-info--special">
+											<h2 class="card-tab__body-title">luxvisage</h2>
+											<!-- Прайс со скидкой -->
+											<div class="card-tab__body-price">
+												<div class="card-tab__body-price--new">120 mdl</div>
+												<div class="card-tab__body-price--old">209 mdl</div>
+											</div>
+											<div class="card-tab__body-text">Крем тональный skin evolution soft matte blur effect</div>
+										</div>
+									</div>
+									<div class="card-tab__body">
+										<div class="card-tab__body-img">
+											<picture><source data-srcset="img/novelties/images/2.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/novelties/images/2.png" alt=""></picture>
+										</div>
+										<div class="card-tab__body-active">
+											<img data-src="img/novelties/colors/4.svg" class="card-tab__body-active--small" alt="">
+											<span class="card-tab__body-active-text">beige</span>
+										</div>
+										<div class="card-tab__body-info card-tab__body-info--special">
+											<h2 class="card-tab__body-title">luxvisage</h2>
+											<!-- Прайс со скидкой -->
+											<div class="card-tab__body-price">
+												<div class="card-tab__body-price--new">120 mdl</div>
+												<div class="card-tab__body-price--old">209 mdl</div>
+											</div>
+											<div class="card-tab__body-text">Крем тональный skin evolution soft matte blur effect</div>
+										</div>
+									</div>
+									<div class="card-tab__body">
+										<div class="card-tab__body-img">
+											<picture><source data-srcset="img/novelties/images/1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/novelties/images/1.png" alt=""></picture>
+										</div>
+										<div class="card-tab__body-active">
+											<img data-src="img/novelties/colors/5.svg" class="card-tab__body-active--small" alt="">
+											<span class="card-tab__body-active-text">beige</span>
+										</div>
+										<div class="card-tab__body-info card-tab__body-info--special">
+											<h2 class="card-tab__body-title">luxvisage</h2>
+											<!-- Прайс со скидкой -->
+											<div class="card-tab__body-price">
+												<div class="card-tab__body-price--new">120 mdl</div>
+												<div class="card-tab__body-price--old">209 mdl</div>
+											</div>
+											<div class="card-tab__body-text">Крем тональный skin evolution soft matte blur effect</div>
+										</div>
+									</div>
+									<div class="card-tab__body">
+										<div class="card-tab__body-img">
+											<picture><source data-srcset="img/novelties/images/2.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/novelties/images/2.png" alt=""></picture>
+										</div>
+										<div class="card-tab__body-active">
+											<img data-src="img/novelties/colors/6.svg" class="card-tab__body-active--small" alt="">
+											<span class="card-tab__body-active-text">beige</span>
+										</div>
+										<div class="card-tab__body-info card-tab__body-info--special">
+											<h2 class="card-tab__body-title">luxvisage</h2>
+											<!-- Прайс со скидкой -->
+											<div class="card-tab__body-price">
+												<div class="card-tab__body-price--new">120 mdl</div>
+												<div class="card-tab__body-price--old">209 mdl</div>
+											</div>
+											<div class="card-tab__body-text">Крем тональный skin evolution soft matte blur effect</div>
+										</div>
+									</div>
+									<div class="card-tab__body">
+										<div class="card-tab__body-img">
+											<picture><source data-srcset="img/novelties/images/1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/novelties/images/1.png" alt=""></picture>
+										</div>
+										<div class="card-tab__body-active">
+											<img data-src="img/novelties/colors/7.svg" class="card-tab__body-active--small" alt="">
+											<span class="card-tab__body-active-text">beige</span>
+										</div>
+										<div class="card-tab__body-info card-tab__body-info--special">
+											<h2 class="card-tab__body-title">luxvisage</h2>
+											<!-- Прайс со скидкой -->
+											<div class="card-tab__body-price">
+												<div class="card-tab__body-price--new">120 mdl</div>
+												<div class="card-tab__body-price--old">209 mdl</div>
+											</div>
+											<div class="card-tab__body-text">Крем тональный skin evolution soft matte blur effect</div>
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<div data-tabs class="card-tab">
+								<div class="card-tab__wrapper">
+									<ul data-tabs-titles class="card-tab__navigation">
+										<li class=" _tab-active">
+											<button type="button" class="card-tab__color"><img data-src="img/novelties/colors/1.svg" alt=""></button>
+										</li>
+										<li>
+											<button type="button" class="card-tab__color"><img data-src="img/novelties/colors/2.svg" alt=""></button>
+										</li>
+										<li>
+											<button type="button" class="card-tab__color"><img data-src="img/novelties/colors/3.svg" alt=""></button>
+										</li>
+										<li>
+											<button type="button" class="card-tab__color"><img data-src="img/novelties/colors/4.svg" alt=""></button>
+										</li>
+										<li>
+											<button type="button" class="card-tab__color"><img data-src="img/novelties/colors/5.svg" alt=""></button>
+										</li>
+										<li>
+											<button type="button" class="card-tab__color"><img data-src="img/novelties/colors/6.svg" alt=""></button>
+										</li>
+										<li>
+											<button type="button" class="card-tab__color"><img data-src="img/novelties/colors/7.svg" alt=""></button>
+										</li>
+									</ul>
+									<button type="button" class="card-tab__counter">+6</button>
+								</div>
+								<div data-tabs-body class="card-tab__content">
+									<div class="card-tab__body">
+										<div class="card-tab__body-img">
+											<picture><source data-srcset="img/novelties/images/1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/novelties/images/1.png" alt=""></picture>
+										</div>
+										<div class="card-tab__body-active">
+											<img data-src="img/novelties/colors/1.svg" class="card-tab__body-active--small" alt="">
+											<span class="card-tab__body-active-text">beige</span>
+										</div>
+										<div class="card-tab__body-info card-tab__body-info--special">
+											<h2 class="card-tab__body-title">luxvisage</h2>
+											<!-- Прайс со скидкой -->
+											<div class="card-tab__body-price">
+												<div class="card-tab__body-price--new">120 mdl</div>
+												<div class="card-tab__body-price--old">209 mdl</div>
+											</div>
+											<div class="card-tab__body-text">Крем тональный skin evolution soft matte blur effect</div>
+										</div>
+									</div>
+									<div class="card-tab__body">
+										<div class="card-tab__body-img">
+											<picture><source data-srcset="img/novelties/images/2.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/novelties/images/2.png" alt=""></picture>
+										</div>
+										<div class="card-tab__body-active">
+											<img data-src="img/novelties/colors/2.svg" class="card-tab__body-active--small" alt="">
+											<span class="card-tab__body-active-text">beige</span>
+										</div>
+										<div class="card-tab__body-info card-tab__body-info--special">
+											<h2 class="card-tab__body-title">luxvisage</h2>
+											<!-- Прайс со скидкой -->
+											<div class="card-tab__body-price">
+												<div class="card-tab__body-price--new">120 mdl</div>
+												<div class="card-tab__body-price--old">209 mdl</div>
+											</div>
+											<div class="card-tab__body-text">Крем тональный skin evolution soft matte blur effect</div>
+										</div>
+									</div>
+									<div class="card-tab__body">
+										<div class="card-tab__body-img">
+											<picture><source data-srcset="img/novelties/images/1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/novelties/images/1.png" alt=""></picture>
+										</div>
+										<div class="card-tab__body-active">
+											<img data-src="img/novelties/colors/3.svg" class="card-tab__body-active--small" alt="">
+											<span class="card-tab__body-active-text">beige</span>
+										</div>
+										<div class="card-tab__body-info card-tab__body-info--special">
+											<h2 class="card-tab__body-title">luxvisage</h2>
+											<!-- Прайс со скидкой -->
+											<div class="card-tab__body-price">
+												<div class="card-tab__body-price--new">120 mdl</div>
+												<div class="card-tab__body-price--old">209 mdl</div>
+											</div>
+											<div class="card-tab__body-text">Крем тональный skin evolution soft matte blur effect</div>
+										</div>
+									</div>
+									<div class="card-tab__body">
+										<div class="card-tab__body-img">
+											<picture><source data-srcset="img/novelties/images/2.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/novelties/images/2.png" alt=""></picture>
+										</div>
+										<div class="card-tab__body-active">
+											<img data-src="img/novelties/colors/4.svg" class="card-tab__body-active--small" alt="">
+											<span class="card-tab__body-active-text">beige</span>
+										</div>
+										<div class="card-tab__body-info card-tab__body-info--special">
+											<h2 class="card-tab__body-title">luxvisage</h2>
+											<!-- Прайс со скидкой -->
+											<div class="card-tab__body-price">
+												<div class="card-tab__body-price--new">120 mdl</div>
+												<div class="card-tab__body-price--old">209 mdl</div>
+											</div>
+											<div class="card-tab__body-text">Крем тональный skin evolution soft matte blur effect</div>
+										</div>
+									</div>
+									<div class="card-tab__body">
+										<div class="card-tab__body-img">
+											<picture><source data-srcset="img/novelties/images/1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/novelties/images/1.png" alt=""></picture>
+										</div>
+										<div class="card-tab__body-active">
+											<img data-src="img/novelties/colors/5.svg" class="card-tab__body-active--small" alt="">
+											<span class="card-tab__body-active-text">beige</span>
+										</div>
+										<div class="card-tab__body-info card-tab__body-info--special">
+											<h2 class="card-tab__body-title">luxvisage</h2>
+											<!-- Прайс со скидкой -->
+											<div class="card-tab__body-price">
+												<div class="card-tab__body-price--new">120 mdl</div>
+												<div class="card-tab__body-price--old">209 mdl</div>
+											</div>
+											<div class="card-tab__body-text">Крем тональный skin evolution soft matte blur effect</div>
+										</div>
+									</div>
+									<div class="card-tab__body">
+										<div class="card-tab__body-img">
+											<picture><source data-srcset="img/novelties/images/2.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/novelties/images/2.png" alt=""></picture>
+										</div>
+										<div class="card-tab__body-active">
+											<img data-src="img/novelties/colors/6.svg" class="card-tab__body-active--small" alt="">
+											<span class="card-tab__body-active-text">beige</span>
+										</div>
+										<div class="card-tab__body-info card-tab__body-info--special">
+											<h2 class="card-tab__body-title">luxvisage</h2>
+											<!-- Прайс со скидкой -->
+											<div class="card-tab__body-price">
+												<div class="card-tab__body-price--new">120 mdl</div>
+												<div class="card-tab__body-price--old">209 mdl</div>
+											</div>
+											<div class="card-tab__body-text">Крем тональный skin evolution soft matte blur effect</div>
+										</div>
+									</div>
+									<div class="card-tab__body">
+										<div class="card-tab__body-img">
+											<picture><source data-srcset="img/novelties/images/1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/novelties/images/1.png" alt=""></picture>
+										</div>
+										<div class="card-tab__body-active">
+											<img data-src="img/novelties/colors/7.svg" class="card-tab__body-active--small" alt="">
+											<span class="card-tab__body-active-text">beige</span>
+										</div>
+										<div class="card-tab__body-info card-tab__body-info--special">
+											<h2 class="card-tab__body-title">luxvisage</h2>
+											<!-- Прайс со скидкой -->
+											<div class="card-tab__body-price">
+												<div class="card-tab__body-price--new">120 mdl</div>
+												<div class="card-tab__body-price--old">209 mdl</div>
+											</div>
+											<div class="card-tab__body-text">Крем тональный skin evolution soft matte blur effect</div>
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Нижний слайдер -->
+			<div class="delmira">
+				<div class="delmira__container">
+					<!-- стрелки -->
+					<div class="delmira-slider-arrows">
+						<div class="delmira-slider-arrows__container">
+							<button type="button" class="bottom-slider-prev"></button>
+							<button type="button" class="bottom-slider-next"></button>
+						</div>
+					</div>
+					<!-- сам слайдер -->
+					<div class="delmira-slider">
+						<div class="delmira-slider__container">
+							<div class="bottom-slider swiper">
+								<!-- Двигающееся часть слайдера -->
+								<div class="bottom__container swiper-wrapper">
+									<!-- Слайд -->
+									<div class="bottom__slide swiper-slide">
+										<div class="bottom-slider__img">
+											<picture><source data-srcset="img/slider2/1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/slider2/1.png" alt=""></picture>
+										</div>
+									</div>
+									<div class="bottom__slide swiper-slide">
+										<div class="bottom-slider__img">
+											<picture><source data-srcset="img/slider2/2.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/slider2/2.png" alt=""></picture>
+										</div>
+									</div>
+									<div class="bottom__slide swiper-slide">
+										<div class="bottom-slider__img">
+											<picture><source data-srcset="img/slider2/3.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/slider2/3.png" alt=""></picture>
+										</div>
+									</div>
+									<div class="bottom__slide swiper-slide">
+										<div class="slider__img">
+											<picture><source data-srcset="img/slider2/1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/slider2/1.png" alt=""></picture>
+										</div>
+									</div>
+									<div class="bottom__slide swiper-slide">
+										<div class="bottom-slider__img">
+											<picture><source data-srcset="img/slider2/2.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/slider2/2.png" alt=""></picture>
+										</div>
+									</div>
+									<div class="bottom__slide swiper-slide">
+										<div class="bottom-slider__img">
+											<picture><source data-srcset="img/slider2/3.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/slider2/3.png" alt=""></picture>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- Если нужна навигация (влево/вправо) -->
+						</div>
+					</div>
+				</div>
+				<div class="delmira-empty">
+				</div>
+			</div>
+			<!-- Форма отправки на почту -->
+			<div class="subscribe">
+				<div class="subscribe__container">
+					<form action="files/sendmail/sendmail.php" method="POST" class="subscribe__form">
+						<input type="text" name="form[email]" data-error="Error" placeholder="Укажите свой Email, чтобы первыми узнавать о новинках и специальных предложениях от delmira.md" class="subscribe__input">
+						<button type="submit" class="subscribe__button">Подписаться на рассылку <img data-src="img/arrow-right.svg" alt=""></button>
+					</form>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<!-- Верхняя часть с контактами и соц сетями -->
+				<div class="footer__top">
+					<div class="footer__top-contacts contacts">
+						<div class="contacts-phone">
+							<a href="tel:(+373) 06 02 93 933">(+373) 06 02 93 933</a>
+						</div>
+						<div class="contacts-title">CC Atrium</div>
+						<div class="contacts-address">Улица Албишоара 4, Кишинев 2001, Молдова 2 этаж, бутик # 23</div>
+					</div>
+					<div class="footer__top-information information">
+						<div class="information__title">Полезная информация</div>
+						<div class="information-menu menu">
+							<nav class="menu__body">
+								<ul class="menu__list">
+									<li class="menu__item"><a href="" class="menu__link">Политика конфиденциальности </a></li>
+									<li class="menu__item"><a href="" class="menu__link">Доставка и оплата</a></li>
+									<li class="menu__item"><a href="" class="menu__link">О нас</a></li>
+									<li class="menu__item"><a href="" class="menu__link">Контакты</a></li>
 								</ul>
 							</nav>
 						</div>
-						<!-- Праве меню -->
-						<div class="menu-right">
-							<nav class="menu-right__body">
-								<ul class="menu-right__list" data-da=".menu-left__list, 479">
-									<li class="menu-right__item"><a href="" class="menu__link">Новинки</a></li>
-									<li class="menu-right__item"><a href="" class="menu__link">Скидки</a></li>
-									<li class="menu-right__item"><a href="" class="menu__link">Бренды</a></li>
-								</ul>
-							</nav>
-						</div>
 					</div>
-				</div>	
-				<!--слайдер под шапкой -->
-				<div class="top-slider top__container swiper">
-					<!-- Двигающееся часть слайдера -->
-					<div class="swiper-wrapper">
-						<!-- Слайд -->
-						<div class="top__slide swiper-slide">
-							<div class="top__slide-info">
-								<div class="top__slide-logo">
-									<img data-src="@img/slider/logo_slide1.png" alt="">
-								</div>
-								<h2 class="top__slide-title">дополнительный объем ваших губ 1</h2>
-								<a href="#" class="top__slide-link">Professional Lip Cream Plump & Care <img data-src="@img/arrow-right-black.svg" alt=""></a>
-							</div>
-							<div class="top-slider__img">
-								<img data-src="@img/slider/test.png" alt="">
-							</div>
-						</div>
-						<div class="top__slide swiper-slide">
-							<div class="top__slide-info">
-								<div class="top__slide-logo">
-									<img data-src="@img/slider/logo_slide1.png" alt="">
-								</div>
-								<h2 class="top__slide-title">дополнительный объем ваших губ 2</h2>
-								<a href="#" class="top__slide-link">Professional Lip Cream Plump & Care <img data-src="@img/arrow-right-black.svg" alt=""></a>
-							</div>
-							<div class="too-slider__img">
-								<img data-src="@img/slider/test.png" alt="">
-							</div>
-						</div>
-					</div>
-					<!-- Если нужна пагинация -->
-					<div class="swiper-pagination"></div>
-					<!-- Если нужен скролбар -->
-					<div class="swiper-scrollbar"></div>
-				</div>
-				<!-- Новинки -->
-				<div class="novelties">
-					<div class="novelties__container">
-						<div class="novelties__img">
-							<img data-src="@img/novelties/woomen1.png" alt="">
-						</div>
-						<div class="novelties__content">
-							<h2 class="novelties__title">Новинки</h2>
-							<div class="novelties__link">
-								<a href="#">Перейти к новинкам</a>
-								<img data-src="@img/arrow-right-black.svg" alt="">
-							</div>
-							<div class="novelties__cards cards">
-								<div class="card">
-									<div data-tabs class="card-tab">
-										<div class="card-tab__wrapper">
-											<ul data-tabs-titles class="card-tab__navigation">
-												<li class=" _tab-active">
-													<button type="button" class="card-tab__color"><img data-src="@img/novelties/colors/1.svg" alt=""></button>
-												</li>
-												<li>
-													<button type="button" class="card-tab__color"><img data-src="@img/novelties/colors/2.svg" alt=""></button>
-												</li>
-												<li>
-													<button type="button" class="card-tab__color"><img data-src="@img/novelties/colors/3.svg" alt=""></button>
-												</li>
-												<li>
-													<button type="button" class="card-tab__color"><img data-src="@img/novelties/colors/4.svg" alt=""></button>
-												</li>
-												<li>
-													<button type="button" class="card-tab__color"><img data-src="@img/novelties/colors/5.svg" alt=""></button>
-												</li>
-												<li>
-													<button type="button" class="card-tab__color"><img data-src="@img/novelties/colors/6.svg" alt=""></button>
-												</li>
-												<li>
-													<button type="button" class="card-tab__color"><img data-src="@img/novelties/colors/7.svg" alt=""></button>
-												</li>
-											</ul>
-											<button type="button" class="card-tab__counter">+6</button>
-										</div>
-										<div data-tabs-body class="card-tab__content">
-											<div class="card-tab__body">
-												<div class="card-tab__body-img">
-													<img data-src="@img/novelties/images/1.png" alt="">
-												</div>
-												<div class="card-tab__body-active">
-													<img data-src="@img/novelties/colors/1.svg" class="card-tab__body-active--small" alt="">
-													<span class="card-tab__body-active-text">beige</span>
-												</div>
-												<div class="card-tab__body-info">
-													<h2 class="card-tab__body-title">luxvisage</h2>
-													<!-- Нет олд прайса, если нужен добавить и не нужно править стили -->
-													<div class="card-tab__body-price">
-														<div class="card-tab__body-price--new">120 mdl</div>
-														<!-- <div class="card-tab__body-price--old">209 mdl</div> -->
-													</div>
-													<div class="card-tab__body-text">Крем тональный skin evolution soft matte blur effect</div>
-												</div>
-											</div>
-											<div class="card-tab__body">
-												<div class="card-tab__body-img">
-													<img data-src="@img/novelties/images/2.png" alt="">
-												</div>
-												<div class="card-tab__body-active">
-													<img data-src="@img/novelties/colors/2.svg" class="card-tab__body-active--small" alt="">
-													<span class="card-tab__body-active-text">beige</span>
-												</div>
-												<div class="card-tab__body-info">
-													<h2 class="card-tab__body-title">luxvisage</h2>
-													<!-- Нет олд прайса, если нужен добавить и не нужно править стили -->
-													<div class="card-tab__body-price">
-														<div class="card-tab__body-price--new">120 mdl</div>
-														<!-- <div class="card-tab__body-price--old">209 mdl</div> -->
-													</div>
-													<div class="card-tab__body-text">Крем тональный skin evolution soft matte blur effect</div>
-												</div>
-											</div>
-											<div class="card-tab__body">
-												<div class="card-tab__body-img">
-													<img data-src="@img/novelties/images/1.png" alt="">
-												</div>
-												<div class="card-tab__body-active">
-													<img data-src="@img/novelties/colors/3.svg" class="card-tab__body-active--small" alt="">
-													<span class="card-tab__body-active-text">beige</span>
-												</div>
-												<div class="card-tab__body-info">
-													<h2 class="card-tab__body-title">luxvisage</h2>
-													<!-- Нет олд прайса, если нужен добавить и не нужно править стили -->
-													<div class="card-tab__body-price">
-														<div class="card-tab__body-price--new">120 mdl</div>
-														<!-- <div class="card-tab__body-price--old">209 mdl</div> -->
-													</div>
-													<div class="card-tab__body-text">Крем тональный skin evolution soft matte blur effect</div>
-												</div>
-											</div>
-											<div class="card-tab__body">
-												<div class="card-tab__body-img">
-													<img data-src="@img/novelties/images/2.png" alt="">
-												</div>
-												<div class="card-tab__body-active">
-													<img data-src="@img/novelties/colors/4.svg" class="card-tab__body-active--small" alt="">
-													<span class="card-tab__body-active-text">beige</span>
-												</div>
-												<div class="card-tab__body-info">
-													<h2 class="card-tab__body-title">luxvisage</h2>
-													<!-- Нет олд прайса, если нужен добавить и не нужно править стили -->
-													<div class="card-tab__body-price">
-														<div class="card-tab__body-price--new">120 mdl</div>
-														<!-- <div class="card-tab__body-price--old">209 mdl</div> -->
-													</div>
-													<div class="card-tab__body-text">Крем тональный skin evolution soft matte blur effect</div>
-												</div>
-											</div>
-											<div class="card-tab__body">
-												<div class="card-tab__body-img">
-													<img data-src="@img/novelties/images/1.png" alt="">
-												</div>
-												<div class="card-tab__body-active">
-													<img data-src="@img/novelties/colors/5.svg" class="card-tab__body-active--small" alt="">
-													<span class="card-tab__body-active-text">beige</span>
-												</div>
-												<div class="card-tab__body-info">
-													<h2 class="card-tab__body-title">luxvisage</h2>
-													<!-- Нет олд прайса, если нужен добавить и не нужно править стили -->
-													<div class="card-tab__body-price">
-														<div class="card-tab__body-price--new">120 mdl</div>
-														<!-- <div class="card-tab__body-price--old">209 mdl</div> -->
-													</div>
-													<div class="card-tab__body-text">Крем тональный skin evolution soft matte blur effect</div>
-												</div>
-											</div>
-											<div class="card-tab__body">
-												<div class="card-tab__body-img">
-													<img data-src="@img/novelties/images/2.png" alt="">
-												</div>
-												<div class="card-tab__body-active">
-													<img data-src="@img/novelties/colors/6.svg" class="card-tab__body-active--small" alt="">
-													<span class="card-tab__body-active-text">beige</span>
-												</div>
-												<div class="card-tab__body-info">
-													<h2 class="card-tab__body-title">luxvisage</h2>
-													<!-- Нет олд прайса, если нужен добавить и не нужно править стили -->
-													<div class="card-tab__body-price">
-														<div class="card-tab__body-price--new">120 mdl</div>
-														<!-- <div class="card-tab__body-price--old">209 mdl</div> -->
-													</div>
-													<div class="card-tab__body-text">Крем тональный skin evolution soft matte blur effect</div>
-												</div>
-											</div>
-											<div class="card-tab__body">
-												<div class="card-tab__body-img">
-													<img data-src="@img/novelties/images/1.png" alt="">
-												</div>
-												<div class="card-tab__body-active">
-													<img data-src="@img/novelties/colors/7.svg" class="card-tab__body-active--small" alt="">
-													<span class="card-tab__body-active-text">beige</span>
-												</div>
-												<div class="card-tab__body-info">
-													<h2 class="card-tab__body-title">luxvisage</h2>
-													<!-- Нет олд прайса, если нужен добавить и не нужно править стили -->
-													<div class="card-tab__body-price">
-														<div class="card-tab__body-price--new">120 mdl</div>
-														<!-- <div class="card-tab__body-price--old">209 mdl</div> -->
-													</div>
-													<div class="card-tab__body-text">Крем тональный skin evolution soft matte blur effect</div>
-												</div>
-											</div>
-											
-										</div>
-									</div>
-								</div>
-								<div class="card">
-									<div data-tabs class="card-tab">
-										<div class="card-tab__wrapper">
-											<ul data-tabs-titles class="card-tab__navigation">
-												<li class=" _tab-active">
-													<button type="button" class="card-tab__color"><img data-src="@img/novelties/colors/1.svg" alt=""></button>
-												</li>
-												<li>
-													<button type="button" class="card-tab__color"><img data-src="@img/novelties/colors/2.svg" alt=""></button>
-												</li>
-												<li>
-													<button type="button" class="card-tab__color"><img data-src="@img/novelties/colors/3.svg" alt=""></button>
-												</li>
-												<li>
-													<button type="button" class="card-tab__color"><img data-src="@img/novelties/colors/4.svg" alt=""></button>
-												</li>
-												<li>
-													<button type="button" class="card-tab__color"><img data-src="@img/novelties/colors/5.svg" alt=""></button>
-												</li>
-												<li>
-													<button type="button" class="card-tab__color"><img data-src="@img/novelties/colors/6.svg" alt=""></button>
-												</li>
-												<li>
-													<button type="button" class="card-tab__color"><img data-src="@img/novelties/colors/7.svg" alt=""></button>
-												</li>
-											</ul>
-											<button type="button" class="card-tab__counter">+6</button>
-										</div>
-										<div data-tabs-body class="card-tab__content">
-											<div class="card-tab__body">
-												<div class="card-tab__body-img">
-													<img data-src="@img/novelties/images/1.png" alt="">
-												</div>
-												<div class="card-tab__body-active">
-													<img data-src="@img/novelties/colors/1.svg" class="card-tab__body-active--small" alt="">
-													<span class="card-tab__body-active-text">beige</span>
-												</div>
-												<div class="card-tab__body-info">
-													<h2 class="card-tab__body-title">luxvisage</h2>
-													<!-- Нет олд прайса, если нужен добавить и не нужно править стили -->
-													<div class="card-tab__body-price">
-														<div class="card-tab__body-price--new">120 mdl</div>
-														<!-- <div class="card-tab__body-price--old">209 mdl</div> -->
-													</div>
-													<div class="card-tab__body-text">Крем тональный skin evolution soft matte blur effect</div>
-												</div>
-											</div>
-											<div class="card-tab__body">
-												<div class="card-tab__body-img">
-													<img data-src="@img/novelties/images/2.png" alt="">
-												</div>
-												<div class="card-tab__body-active">
-													<img data-src="@img/novelties/colors/2.svg" class="card-tab__body-active--small" alt="">
-													<span class="card-tab__body-active-text">beige</span>
-												</div>
-												<div class="card-tab__body-info">
-													<h2 class="card-tab__body-title">luxvisage</h2>
-													<!-- Нет олд прайса, если нужен добавить и не нужно править стили -->
-													<div class="card-tab__body-price">
-														<div class="card-tab__body-price--new">120 mdl</div>
-														<!-- <div class="card-tab__body-price--old">209 mdl</div> -->
-													</div>
-													<div class="card-tab__body-text">Крем тональный skin evolution soft matte blur effect</div>
-												</div>
-											</div>
-											<div class="card-tab__body">
-												<div class="card-tab__body-img">
-													<img data-src="@img/novelties/images/1.png" alt="">
-												</div>
-												<div class="card-tab__body-active">
-													<img data-src="@img/novelties/colors/3.svg" class="card-tab__body-active--small" alt="">
-													<span class="card-tab__body-active-text">beige</span>
-												</div>
-												<div class="card-tab__body-info">
-													<h2 class="card-tab__body-title">luxvisage</h2>
-													<!-- Нет олд прайса, если нужен добавить и не нужно править стили -->
-													<div class="card-tab__body-price">
-														<div class="card-tab__body-price--new">120 mdl</div>
-														<!-- <div class="card-tab__body-price--old">209 mdl</div> -->
-													</div>
-													<div class="card-tab__body-text">Крем тональный skin evolution soft matte blur effect</div>
-												</div>
-											</div>
-											<div class="card-tab__body">
-												<div class="card-tab__body-img">
-													<img data-src="@img/novelties/images/2.png" alt="">
-												</div>
-												<div class="card-tab__body-active">
-													<img data-src="@img/novelties/colors/4.svg" class="card-tab__body-active--small" alt="">
-													<span class="card-tab__body-active-text">beige</span>
-												</div>
-												<div class="card-tab__body-info">
-													<h2 class="card-tab__body-title">luxvisage</h2>
-													<!-- Нет олд прайса, если нужен добавить и не нужно править стили -->
-													<div class="card-tab__body-price">
-														<div class="card-tab__body-price--new">120 mdl</div>
-														<!-- <div class="card-tab__body-price--old">209 mdl</div> -->
-													</div>
-													<div class="card-tab__body-text">Крем тональный skin evolution soft matte blur effect</div>
-												</div>
-											</div>
-											<div class="card-tab__body">
-												<div class="card-tab__body-img">
-													<img data-src="@img/novelties/images/1.png" alt="">
-												</div>
-												<div class="card-tab__body-active">
-													<img data-src="@img/novelties/colors/5.svg" class="card-tab__body-active--small" alt="">
-													<span class="card-tab__body-active-text">beige</span>
-												</div>
-												<div class="card-tab__body-info">
-													<h2 class="card-tab__body-title">luxvisage</h2>
-													<!-- Нет олд прайса, если нужен добавить и не нужно править стили -->
-													<div class="card-tab__body-price">
-														<div class="card-tab__body-price--new">120 mdl</div>
-														<!-- <div class="card-tab__body-price--old">209 mdl</div> -->
-													</div>
-													<div class="card-tab__body-text">Крем тональный skin evolution soft matte blur effect</div>
-												</div>
-											</div>
-											<div class="card-tab__body">
-												<div class="card-tab__body-img">
-													<img data-src="@img/novelties/images/2.png" alt="">
-												</div>
-												<div class="card-tab__body-active">
-													<img data-src="@img/novelties/colors/6.svg" class="card-tab__body-active--small" alt="">
-													<span class="card-tab__body-active-text">beige</span>
-												</div>
-												<div class="card-tab__body-info">
-													<h2 class="card-tab__body-title">luxvisage</h2>
-													<!-- Нет олд прайса, если нужен добавить и не нужно править стили -->
-													<div class="card-tab__body-price">
-														<div class="card-tab__body-price--new">120 mdl</div>
-														<!-- <div class="card-tab__body-price--old">209 mdl</div> -->
-													</div>
-													<div class="card-tab__body-text">Крем тональный skin evolution soft matte blur effect</div>
-												</div>
-											</div>
-											<div class="card-tab__body">
-												<div class="card-tab__body-img">
-													<img data-src="@img/novelties/images/1.png" alt="">
-												</div>
-												<div class="card-tab__body-active">
-													<img data-src="@img/novelties/colors/7.svg" class="card-tab__body-active--small" alt="">
-													<span class="card-tab__body-active-text">beige</span>
-												</div>
-												<div class="card-tab__body-info">
-													<h2 class="card-tab__body-title">luxvisage</h2>
-													<!-- Нет олд прайса, если нужен добавить и не нужно править стили -->
-													<div class="card-tab__body-price">
-														<div class="card-tab__body-price--new">120 mdl</div>
-														<!-- <div class="card-tab__body-price--old">209 mdl</div> -->
-													</div>
-													<div class="card-tab__body-text">Крем тональный skin evolution soft matte blur effect</div>
-												</div>
-											</div>
-											
-										</div>
-									</div>
-								</div>
-								<div class="card">
-									<div data-tabs class="card-tab">
-										<div class="card-tab__wrapper">
-											<ul data-tabs-titles class="card-tab__navigation">
-												<li class=" _tab-active">
-													<button type="button" class="card-tab__color"><img data-src="@img/novelties/colors/1.svg" alt=""></button>
-												</li>
-												<li>
-													<button type="button" class="card-tab__color"><img data-src="@img/novelties/colors/2.svg" alt=""></button>
-												</li>
-												<li>
-													<button type="button" class="card-tab__color"><img data-src="@img/novelties/colors/3.svg" alt=""></button>
-												</li>
-												<li>
-													<button type="button" class="card-tab__color"><img data-src="@img/novelties/colors/4.svg" alt=""></button>
-												</li>
-												<li>
-													<button type="button" class="card-tab__color"><img data-src="@img/novelties/colors/5.svg" alt=""></button>
-												</li>
-												<li>
-													<button type="button" class="card-tab__color"><img data-src="@img/novelties/colors/6.svg" alt=""></button>
-												</li>
-												<li>
-													<button type="button" class="card-tab__color"><img data-src="@img/novelties/colors/7.svg" alt=""></button>
-												</li>
-											</ul>
-											<button type="button" class="card-tab__counter">+6</button>
-										</div>
-										<div data-tabs-body class="card-tab__content">
-											<div class="card-tab__body">
-												<div class="card-tab__body-img">
-													<img data-src="@img/novelties/images/1.png" alt="">
-												</div>
-												<div class="card-tab__body-active">
-													<img data-src="@img/novelties/colors/1.svg" class="card-tab__body-active--small" alt="">
-													<span class="card-tab__body-active-text">beige</span>
-												</div>
-												<div class="card-tab__body-info">
-													<h2 class="card-tab__body-title">luxvisage</h2>
-													<!-- Нет олд прайса, если нужен добавить и не нужно править стили -->
-													<div class="card-tab__body-price">
-														<div class="card-tab__body-price--new">120 mdl</div>
-														<!-- <div class="card-tab__body-price--old">209 mdl</div> -->
-													</div>
-													<div class="card-tab__body-text">Крем тональный skin evolution soft matte blur effect</div>
-												</div>
-											</div>
-											<div class="card-tab__body">
-												<div class="card-tab__body-img">
-													<img data-src="@img/novelties/images/2.png" alt="">
-												</div>
-												<div class="card-tab__body-active">
-													<img data-src="@img/novelties/colors/2.svg" class="card-tab__body-active--small" alt="">
-													<span class="card-tab__body-active-text">beige</span>
-												</div>
-												<div class="card-tab__body-info">
-													<h2 class="card-tab__body-title">luxvisage</h2>
-													<!-- Нет олд прайса, если нужен добавить и не нужно править стили -->
-													<div class="card-tab__body-price">
-														<div class="card-tab__body-price--new">120 mdl</div>
-														<!-- <div class="card-tab__body-price--old">209 mdl</div> -->
-													</div>
-													<div class="card-tab__body-text">Крем тональный skin evolution soft matte blur effect</div>
-												</div>
-											</div>
-											<div class="card-tab__body">
-												<div class="card-tab__body-img">
-													<img data-src="@img/novelties/images/1.png" alt="">
-												</div>
-												<div class="card-tab__body-active">
-													<img data-src="@img/novelties/colors/3.svg" class="card-tab__body-active--small" alt="">
-													<span class="card-tab__body-active-text">beige</span>
-												</div>
-												<div class="card-tab__body-info">
-													<h2 class="card-tab__body-title">luxvisage</h2>
-													<!-- Нет олд прайса, если нужен добавить и не нужно править стили -->
-													<div class="card-tab__body-price">
-														<div class="card-tab__body-price--new">120 mdl</div>
-														<!-- <div class="card-tab__body-price--old">209 mdl</div> -->
-													</div>
-													<div class="card-tab__body-text">Крем тональный skin evolution soft matte blur effect</div>
-												</div>
-											</div>
-											<div class="card-tab__body">
-												<div class="card-tab__body-img">
-													<img data-src="@img/novelties/images/2.png" alt="">
-												</div>
-												<div class="card-tab__body-active">
-													<img data-src="@img/novelties/colors/4.svg" class="card-tab__body-active--small" alt="">
-													<span class="card-tab__body-active-text">beige</span>
-												</div>
-												<div class="card-tab__body-info">
-													<h2 class="card-tab__body-title">luxvisage</h2>
-													<!-- Нет олд прайса, если нужен добавить и не нужно править стили -->
-													<div class="card-tab__body-price">
-														<div class="card-tab__body-price--new">120 mdl</div>
-														<!-- <div class="card-tab__body-price--old">209 mdl</div> -->
-													</div>
-													<div class="card-tab__body-text">Крем тональный skin evolution soft matte blur effect</div>
-												</div>
-											</div>
-											<div class="card-tab__body">
-												<div class="card-tab__body-img">
-													<img data-src="@img/novelties/images/1.png" alt="">
-												</div>
-												<div class="card-tab__body-active">
-													<img data-src="@img/novelties/colors/5.svg" class="card-tab__body-active--small" alt="">
-													<span class="card-tab__body-active-text">beige</span>
-												</div>
-												<div class="card-tab__body-info">
-													<h2 class="card-tab__body-title">luxvisage</h2>
-													<!-- Нет олд прайса, если нужен добавить и не нужно править стили -->
-													<div class="card-tab__body-price">
-														<div class="card-tab__body-price--new">120 mdl</div>
-														<!-- <div class="card-tab__body-price--old">209 mdl</div> -->
-													</div>
-													<div class="card-tab__body-text">Крем тональный skin evolution soft matte blur effect</div>
-												</div>
-											</div>
-											<div class="card-tab__body">
-												<div class="card-tab__body-img">
-													<img data-src="@img/novelties/images/2.png" alt="">
-												</div>
-												<div class="card-tab__body-active">
-													<img data-src="@img/novelties/colors/6.svg" class="card-tab__body-active--small" alt="">
-													<span class="card-tab__body-active-text">beige</span>
-												</div>
-												<div class="card-tab__body-info">
-													<h2 class="card-tab__body-title">luxvisage</h2>
-													<!-- Нет олд прайса, если нужен добавить и не нужно править стили -->
-													<div class="card-tab__body-price">
-														<div class="card-tab__body-price--new">120 mdl</div>
-														<!-- <div class="card-tab__body-price--old">209 mdl</div> -->
-													</div>
-													<div class="card-tab__body-text">Крем тональный skin evolution soft matte blur effect</div>
-												</div>
-											</div>
-											<div class="card-tab__body">
-												<div class="card-tab__body-img">
-													<img data-src="@img/novelties/images/1.png" alt="">
-												</div>
-												<div class="card-tab__body-active">
-													<img data-src="@img/novelties/colors/7.svg" class="card-tab__body-active--small" alt="">
-													<span class="card-tab__body-active-text">beige</span>
-												</div>
-												<div class="card-tab__body-info">
-													<h2 class="card-tab__body-title">luxvisage</h2>
-													<!-- Нет олд прайса, если нужен добавить и не нужно править стили -->
-													<div class="card-tab__body-price">
-														<div class="card-tab__body-price--new">120 mdl</div>
-														<!-- <div class="card-tab__body-price--old">209 mdl</div> -->
-													</div>
-													<div class="card-tab__body-text">Крем тональный skin evolution soft matte blur effect</div>
-												</div>
-											</div>
-											
-										</div>
-									</div>
-								</div>
-							</div>
+					<div class="footer-top__social social">
+						<div class="social-title">следите за нами</div>
+						<div class="social-icons">
+							<img data-src="img/footer/instagram.svg" alt="">
+							<img data-src="img/footer/fb.svg" alt="">
 						</div>
 					</div>
 				</div>
-				<!-- Специальные предложения -->
-				<div class="special">
-					<div class="special__container">
-						<h2 class="special__title">Специальные предложения</h2>
-						<div class="special__descr">
-							<div class="special__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-							<div class="special__link">
-								<button type="submit" class="button">Перейти к спецпредложениям</button>
-								<img data-src="@img/arrow-right-black.svg" alt="">
-							</div>
+				<!-- нижняя часть с копирайтом -->
+				<div class="footer__bottom">
+					<div class="footer__bottom-copyright">
+						2022 © Delmira Beauty. all rights reserved
+					</div>
+					<div class="footer__bottom-author author">
+						<div class="author-text">
+							<div class="author-text__by">develop by</div>
+							<div class="author-text__studio">Studio WebMaster, 2022</div>
 						</div>
-						<div class="special__cards cards">
-							<div class="card">
-								<div data-tabs class="card-tab">
-									<div class="card-tab__wrapper">
-										<ul data-tabs-titles class="card-tab__navigation">
-											<li class=" _tab-active">
-												<button type="button" class="card-tab__color"><img data-src="@img/novelties/colors/1.svg" alt=""></button>
-											</li>
-											<li>
-												<button type="button" class="card-tab__color"><img data-src="@img/novelties/colors/2.svg" alt=""></button>
-											</li>
-											<li>
-												<button type="button" class="card-tab__color"><img data-src="@img/novelties/colors/3.svg" alt=""></button>
-											</li>
-											<li>
-												<button type="button" class="card-tab__color"><img data-src="@img/novelties/colors/4.svg" alt=""></button>
-											</li>
-											<li>
-												<button type="button" class="card-tab__color"><img data-src="@img/novelties/colors/5.svg" alt=""></button>
-											</li>
-											<li>
-												<button type="button" class="card-tab__color"><img data-src="@img/novelties/colors/6.svg" alt=""></button>
-											</li>
-											<li>
-												<button type="button" class="card-tab__color"><img data-src="@img/novelties/colors/7.svg" alt=""></button>
-											</li>
-										</ul>
-										<button type="button" class="card-tab__counter">+6</button>
-									</div>
-									<div data-tabs-body class="card-tab__content">
-										<div class="card-tab__body">
-											<div class="card-tab__body-img">
-												<img data-src="@img/novelties/images/1.png" alt="">
-											</div>
-											<div class="card-tab__body-active">
-												<img data-src="@img/novelties/colors/1.svg" class="card-tab__body-active--small" alt="">
-												<span class="card-tab__body-active-text">beige</span>
-											</div>
-											<div class="card-tab__body-info card-tab__body-info--special">
-												<h2 class="card-tab__body-title">luxvisage</h2>
-												<!-- Прайс со скидкой -->
-												<div class="card-tab__body-price">
-													<div class="card-tab__body-price--new">120 mdl</div>
-													<div class="card-tab__body-price--old">209 mdl</div>
-												</div>
-												<div class="card-tab__body-text">Крем тональный skin evolution soft matte blur effect</div>
-											</div>
-										</div>
-										<div class="card-tab__body">
-											<div class="card-tab__body-img">
-												<img data-src="@img/novelties/images/2.png" alt="">
-											</div>
-											<div class="card-tab__body-active">
-												<img data-src="@img/novelties/colors/2.svg" class="card-tab__body-active--small" alt="">
-												<span class="card-tab__body-active-text">beige</span>
-											</div>
-											<div class="card-tab__body-info card-tab__body-info--special">
-												<h2 class="card-tab__body-title">luxvisage</h2>
-												<!-- Прайс со скидкой -->
-												<div class="card-tab__body-price">
-													<div class="card-tab__body-price--new">120 mdl</div>
-													<div class="card-tab__body-price--old">209 mdl</div>
-												</div>
-												<div class="card-tab__body-text">Крем тональный skin evolution soft matte blur effect</div>
-											</div>
-										</div>
-										<div class="card-tab__body">
-											<div class="card-tab__body-img">
-												<img data-src="@img/novelties/images/1.png" alt="">
-											</div>
-											<div class="card-tab__body-active">
-												<img data-src="@img/novelties/colors/3.svg" class="card-tab__body-active--small" alt="">
-												<span class="card-tab__body-active-text">beige</span>
-											</div>
-											<div class="card-tab__body-info card-tab__body-info--special">
-												<h2 class="card-tab__body-title">luxvisage</h2>
-												<!-- Прайс со скидкой -->
-												<div class="card-tab__body-price">
-													<div class="card-tab__body-price--new">120 mdl</div>
-													<div class="card-tab__body-price--old">209 mdl</div>
-												</div>
-												<div class="card-tab__body-text">Крем тональный skin evolution soft matte blur effect</div>
-											</div>
-										</div>
-										<div class="card-tab__body">
-											<div class="card-tab__body-img">
-												<img data-src="@img/novelties/images/2.png" alt="">
-											</div>
-											<div class="card-tab__body-active">
-												<img data-src="@img/novelties/colors/4.svg" class="card-tab__body-active--small" alt="">
-												<span class="card-tab__body-active-text">beige</span>
-											</div>
-											<div class="card-tab__body-info card-tab__body-info--special">
-												<h2 class="card-tab__body-title">luxvisage</h2>
-												<!-- Прайс со скидкой -->
-												<div class="card-tab__body-price">
-													<div class="card-tab__body-price--new">120 mdl</div>
-													<div class="card-tab__body-price--old">209 mdl</div>
-												</div>
-												<div class="card-tab__body-text">Крем тональный skin evolution soft matte blur effect</div>
-											</div>
-										</div>
-										<div class="card-tab__body">
-											<div class="card-tab__body-img">
-												<img data-src="@img/novelties/images/1.png" alt="">
-											</div>
-											<div class="card-tab__body-active">
-												<img data-src="@img/novelties/colors/5.svg" class="card-tab__body-active--small" alt="">
-												<span class="card-tab__body-active-text">beige</span>
-											</div>
-											<div class="card-tab__body-info card-tab__body-info--special">
-												<h2 class="card-tab__body-title">luxvisage</h2>
-												<!-- Прайс со скидкой -->
-												<div class="card-tab__body-price">
-													<div class="card-tab__body-price--new">120 mdl</div>
-													<div class="card-tab__body-price--old">209 mdl</div>
-												</div>
-												<div class="card-tab__body-text">Крем тональный skin evolution soft matte blur effect</div>
-											</div>
-										</div>
-										<div class="card-tab__body">
-											<div class="card-tab__body-img">
-												<img data-src="@img/novelties/images/2.png" alt="">
-											</div>
-											<div class="card-tab__body-active">
-												<img data-src="@img/novelties/colors/6.svg" class="card-tab__body-active--small" alt="">
-												<span class="card-tab__body-active-text">beige</span>
-											</div>
-											<div class="card-tab__body-info card-tab__body-info--special">
-												<h2 class="card-tab__body-title">luxvisage</h2>
-												<!-- Прайс со скидкой -->
-												<div class="card-tab__body-price">
-													<div class="card-tab__body-price--new">120 mdl</div>
-													<div class="card-tab__body-price--old">209 mdl</div>
-												</div>
-												<div class="card-tab__body-text">Крем тональный skin evolution soft matte blur effect</div>
-											</div>
-										</div>
-										<div class="card-tab__body">
-											<div class="card-tab__body-img">
-												<img data-src="@img/novelties/images/1.png" alt="">
-											</div>
-											<div class="card-tab__body-active">
-												<img data-src="@img/novelties/colors/7.svg" class="card-tab__body-active--small" alt="">
-												<span class="card-tab__body-active-text">beige</span>
-											</div>
-											<div class="card-tab__body-info card-tab__body-info--special">
-												<h2 class="card-tab__body-title">luxvisage</h2>
-												<!-- Прайс со скидкой -->
-												<div class="card-tab__body-price">
-													<div class="card-tab__body-price--new">120 mdl</div>
-													<div class="card-tab__body-price--old">209 mdl</div>
-												</div>
-												<div class="card-tab__body-text">Крем тональный skin evolution soft matte blur effect</div>
-											</div>
-										</div>
-										
-									</div>
-								</div>
-							</div>
-							<div class="card">
-								<div data-tabs class="card-tab">
-									<div class="card-tab__wrapper">
-										<ul data-tabs-titles class="card-tab__navigation">
-											<li class=" _tab-active">
-												<button type="button" class="card-tab__color"><img data-src="@img/novelties/colors/1.svg" alt=""></button>
-											</li>
-											<li>
-												<button type="button" class="card-tab__color"><img data-src="@img/novelties/colors/2.svg" alt=""></button>
-											</li>
-											<li>
-												<button type="button" class="card-tab__color"><img data-src="@img/novelties/colors/3.svg" alt=""></button>
-											</li>
-											<li>
-												<button type="button" class="card-tab__color"><img data-src="@img/novelties/colors/4.svg" alt=""></button>
-											</li>
-											<li>
-												<button type="button" class="card-tab__color"><img data-src="@img/novelties/colors/5.svg" alt=""></button>
-											</li>
-											<li>
-												<button type="button" class="card-tab__color"><img data-src="@img/novelties/colors/6.svg" alt=""></button>
-											</li>
-											<li>
-												<button type="button" class="card-tab__color"><img data-src="@img/novelties/colors/7.svg" alt=""></button>
-											</li>
-										</ul>
-										<button type="button" class="card-tab__counter">+6</button>
-									</div>
-									<div data-tabs-body class="card-tab__content">
-										<div class="card-tab__body">
-											<div class="card-tab__body-img">
-												<img data-src="@img/novelties/images/1.png" alt="">
-											</div>
-											<div class="card-tab__body-active">
-												<img data-src="@img/novelties/colors/1.svg" class="card-tab__body-active--small" alt="">
-												<span class="card-tab__body-active-text">beige</span>
-											</div>
-											<div class="card-tab__body-info card-tab__body-info--special">
-												<h2 class="card-tab__body-title">luxvisage</h2>
-												<!-- Прайс со скидкой -->
-												<div class="card-tab__body-price">
-													<div class="card-tab__body-price--new">120 mdl</div>
-													<div class="card-tab__body-price--old">209 mdl</div>
-												</div>
-												<div class="card-tab__body-text">Крем тональный skin evolution soft matte blur effect</div>
-											</div>
-										</div>
-										<div class="card-tab__body">
-											<div class="card-tab__body-img">
-												<img data-src="@img/novelties/images/2.png" alt="">
-											</div>
-											<div class="card-tab__body-active">
-												<img data-src="@img/novelties/colors/2.svg" class="card-tab__body-active--small" alt="">
-												<span class="card-tab__body-active-text">beige</span>
-											</div>
-											<div class="card-tab__body-info card-tab__body-info--special">
-												<h2 class="card-tab__body-title">luxvisage</h2>
-												<!-- Прайс со скидкой -->
-												<div class="card-tab__body-price">
-													<div class="card-tab__body-price--new">120 mdl</div>
-													<div class="card-tab__body-price--old">209 mdl</div>
-												</div>
-												<div class="card-tab__body-text">Крем тональный skin evolution soft matte blur effect</div>
-											</div>
-										</div>
-										<div class="card-tab__body">
-											<div class="card-tab__body-img">
-												<img data-src="@img/novelties/images/1.png" alt="">
-											</div>
-											<div class="card-tab__body-active">
-												<img data-src="@img/novelties/colors/3.svg" class="card-tab__body-active--small" alt="">
-												<span class="card-tab__body-active-text">beige</span>
-											</div>
-											<div class="card-tab__body-info card-tab__body-info--special">
-												<h2 class="card-tab__body-title">luxvisage</h2>
-												<!-- Прайс со скидкой -->
-												<div class="card-tab__body-price">
-													<div class="card-tab__body-price--new">120 mdl</div>
-													<div class="card-tab__body-price--old">209 mdl</div>
-												</div>
-												<div class="card-tab__body-text">Крем тональный skin evolution soft matte blur effect</div>
-											</div>
-										</div>
-										<div class="card-tab__body">
-											<div class="card-tab__body-img">
-												<img data-src="@img/novelties/images/2.png" alt="">
-											</div>
-											<div class="card-tab__body-active">
-												<img data-src="@img/novelties/colors/4.svg" class="card-tab__body-active--small" alt="">
-												<span class="card-tab__body-active-text">beige</span>
-											</div>
-											<div class="card-tab__body-info card-tab__body-info--special">
-												<h2 class="card-tab__body-title">luxvisage</h2>
-												<!-- Прайс со скидкой -->
-												<div class="card-tab__body-price">
-													<div class="card-tab__body-price--new">120 mdl</div>
-													<div class="card-tab__body-price--old">209 mdl</div>
-												</div>
-												<div class="card-tab__body-text">Крем тональный skin evolution soft matte blur effect</div>
-											</div>
-										</div>
-										<div class="card-tab__body">
-											<div class="card-tab__body-img">
-												<img data-src="@img/novelties/images/1.png" alt="">
-											</div>
-											<div class="card-tab__body-active">
-												<img data-src="@img/novelties/colors/5.svg" class="card-tab__body-active--small" alt="">
-												<span class="card-tab__body-active-text">beige</span>
-											</div>
-											<div class="card-tab__body-info card-tab__body-info--special">
-												<h2 class="card-tab__body-title">luxvisage</h2>
-												<!-- Прайс со скидкой -->
-												<div class="card-tab__body-price">
-													<div class="card-tab__body-price--new">120 mdl</div>
-													<div class="card-tab__body-price--old">209 mdl</div>
-												</div>
-												<div class="card-tab__body-text">Крем тональный skin evolution soft matte blur effect</div>
-											</div>
-										</div>
-										<div class="card-tab__body">
-											<div class="card-tab__body-img">
-												<img data-src="@img/novelties/images/2.png" alt="">
-											</div>
-											<div class="card-tab__body-active">
-												<img data-src="@img/novelties/colors/6.svg" class="card-tab__body-active--small" alt="">
-												<span class="card-tab__body-active-text">beige</span>
-											</div>
-											<div class="card-tab__body-info card-tab__body-info--special">
-												<h2 class="card-tab__body-title">luxvisage</h2>
-												<!-- Прайс со скидкой -->
-												<div class="card-tab__body-price">
-													<div class="card-tab__body-price--new">120 mdl</div>
-													<div class="card-tab__body-price--old">209 mdl</div>
-												</div>
-												<div class="card-tab__body-text">Крем тональный skin evolution soft matte blur effect</div>
-											</div>
-										</div>
-										<div class="card-tab__body">
-											<div class="card-tab__body-img">
-												<img data-src="@img/novelties/images/1.png" alt="">
-											</div>
-											<div class="card-tab__body-active">
-												<img data-src="@img/novelties/colors/7.svg" class="card-tab__body-active--small" alt="">
-												<span class="card-tab__body-active-text">beige</span>
-											</div>
-											<div class="card-tab__body-info card-tab__body-info--special">
-												<h2 class="card-tab__body-title">luxvisage</h2>
-												<!-- Прайс со скидкой -->
-												<div class="card-tab__body-price">
-													<div class="card-tab__body-price--new">120 mdl</div>
-													<div class="card-tab__body-price--old">209 mdl</div>
-												</div>
-												<div class="card-tab__body-text">Крем тональный skin evolution soft matte blur effect</div>
-											</div>
-										</div>
-										
-									</div>
-								</div>
-							</div>
-							<div class="card">
-								<div data-tabs class="card-tab">
-									<div class="card-tab__wrapper">
-										<ul data-tabs-titles class="card-tab__navigation">
-											<li class=" _tab-active">
-												<button type="button" class="card-tab__color"><img data-src="@img/novelties/colors/1.svg" alt=""></button>
-											</li>
-											<li>
-												<button type="button" class="card-tab__color"><img data-src="@img/novelties/colors/2.svg" alt=""></button>
-											</li>
-											<li>
-												<button type="button" class="card-tab__color"><img data-src="@img/novelties/colors/3.svg" alt=""></button>
-											</li>
-											<li>
-												<button type="button" class="card-tab__color"><img data-src="@img/novelties/colors/4.svg" alt=""></button>
-											</li>
-											<li>
-												<button type="button" class="card-tab__color"><img data-src="@img/novelties/colors/5.svg" alt=""></button>
-											</li>
-											<li>
-												<button type="button" class="card-tab__color"><img data-src="@img/novelties/colors/6.svg" alt=""></button>
-											</li>
-											<li>
-												<button type="button" class="card-tab__color"><img data-src="@img/novelties/colors/7.svg" alt=""></button>
-											</li>
-										</ul>
-										<button type="button" class="card-tab__counter">+6</button>
-									</div>
-									<div data-tabs-body class="card-tab__content">
-										<div class="card-tab__body">
-											<div class="card-tab__body-img">
-												<img data-src="@img/novelties/images/1.png" alt="">
-											</div>
-											<div class="card-tab__body-active">
-												<img data-src="@img/novelties/colors/1.svg" class="card-tab__body-active--small" alt="">
-												<span class="card-tab__body-active-text">beige</span>
-											</div>
-											<div class="card-tab__body-info card-tab__body-info--special">
-												<h2 class="card-tab__body-title">luxvisage</h2>
-												<!-- Прайс со скидкой -->
-												<div class="card-tab__body-price">
-													<div class="card-tab__body-price--new">120 mdl</div>
-													<div class="card-tab__body-price--old">209 mdl</div>
-												</div>
-												<div class="card-tab__body-text">Крем тональный skin evolution soft matte blur effect</div>
-											</div>
-										</div>
-										<div class="card-tab__body">
-											<div class="card-tab__body-img">
-												<img data-src="@img/novelties/images/2.png" alt="">
-											</div>
-											<div class="card-tab__body-active">
-												<img data-src="@img/novelties/colors/2.svg" class="card-tab__body-active--small" alt="">
-												<span class="card-tab__body-active-text">beige</span>
-											</div>
-											<div class="card-tab__body-info card-tab__body-info--special">
-												<h2 class="card-tab__body-title">luxvisage</h2>
-												<!-- Прайс со скидкой -->
-												<div class="card-tab__body-price">
-													<div class="card-tab__body-price--new">120 mdl</div>
-													<div class="card-tab__body-price--old">209 mdl</div>
-												</div>
-												<div class="card-tab__body-text">Крем тональный skin evolution soft matte blur effect</div>
-											</div>
-										</div>
-										<div class="card-tab__body">
-											<div class="card-tab__body-img">
-												<img data-src="@img/novelties/images/1.png" alt="">
-											</div>
-											<div class="card-tab__body-active">
-												<img data-src="@img/novelties/colors/3.svg" class="card-tab__body-active--small" alt="">
-												<span class="card-tab__body-active-text">beige</span>
-											</div>
-											<div class="card-tab__body-info card-tab__body-info--special">
-												<h2 class="card-tab__body-title">luxvisage</h2>
-												<!-- Прайс со скидкой -->
-												<div class="card-tab__body-price">
-													<div class="card-tab__body-price--new">120 mdl</div>
-													<div class="card-tab__body-price--old">209 mdl</div>
-												</div>
-												<div class="card-tab__body-text">Крем тональный skin evolution soft matte blur effect</div>
-											</div>
-										</div>
-										<div class="card-tab__body">
-											<div class="card-tab__body-img">
-												<img data-src="@img/novelties/images/2.png" alt="">
-											</div>
-											<div class="card-tab__body-active">
-												<img data-src="@img/novelties/colors/4.svg" class="card-tab__body-active--small" alt="">
-												<span class="card-tab__body-active-text">beige</span>
-											</div>
-											<div class="card-tab__body-info card-tab__body-info--special">
-												<h2 class="card-tab__body-title">luxvisage</h2>
-												<!-- Прайс со скидкой -->
-												<div class="card-tab__body-price">
-													<div class="card-tab__body-price--new">120 mdl</div>
-													<div class="card-tab__body-price--old">209 mdl</div>
-												</div>
-												<div class="card-tab__body-text">Крем тональный skin evolution soft matte blur effect</div>
-											</div>
-										</div>
-										<div class="card-tab__body">
-											<div class="card-tab__body-img">
-												<img data-src="@img/novelties/images/1.png" alt="">
-											</div>
-											<div class="card-tab__body-active">
-												<img data-src="@img/novelties/colors/5.svg" class="card-tab__body-active--small" alt="">
-												<span class="card-tab__body-active-text">beige</span>
-											</div>
-											<div class="card-tab__body-info card-tab__body-info--special">
-												<h2 class="card-tab__body-title">luxvisage</h2>
-												<!-- Прайс со скидкой -->
-												<div class="card-tab__body-price">
-													<div class="card-tab__body-price--new">120 mdl</div>
-													<div class="card-tab__body-price--old">209 mdl</div>
-												</div>
-												<div class="card-tab__body-text">Крем тональный skin evolution soft matte blur effect</div>
-											</div>
-										</div>
-										<div class="card-tab__body">
-											<div class="card-tab__body-img">
-												<img data-src="@img/novelties/images/2.png" alt="">
-											</div>
-											<div class="card-tab__body-active">
-												<img data-src="@img/novelties/colors/6.svg" class="card-tab__body-active--small" alt="">
-												<span class="card-tab__body-active-text">beige</span>
-											</div>
-											<div class="card-tab__body-info card-tab__body-info--special">
-												<h2 class="card-tab__body-title">luxvisage</h2>
-												<!-- Прайс со скидкой -->
-												<div class="card-tab__body-price">
-													<div class="card-tab__body-price--new">120 mdl</div>
-													<div class="card-tab__body-price--old">209 mdl</div>
-												</div>
-												<div class="card-tab__body-text">Крем тональный skin evolution soft matte blur effect</div>
-											</div>
-										</div>
-										<div class="card-tab__body">
-											<div class="card-tab__body-img">
-												<img data-src="@img/novelties/images/1.png" alt="">
-											</div>
-											<div class="card-tab__body-active">
-												<img data-src="@img/novelties/colors/7.svg" class="card-tab__body-active--small" alt="">
-												<span class="card-tab__body-active-text">beige</span>
-											</div>
-											<div class="card-tab__body-info card-tab__body-info--special">
-												<h2 class="card-tab__body-title">luxvisage</h2>
-												<!-- Прайс со скидкой -->
-												<div class="card-tab__body-price">
-													<div class="card-tab__body-price--new">120 mdl</div>
-													<div class="card-tab__body-price--old">209 mdl</div>
-												</div>
-												<div class="card-tab__body-text">Крем тональный skin evolution soft matte blur effect</div>
-											</div>
-										</div>
-										
-									</div>
-								</div>
-							</div>
-							<div class="card">
-								<div data-tabs class="card-tab">
-									<div class="card-tab__wrapper">
-										<ul data-tabs-titles class="card-tab__navigation">
-											<li class=" _tab-active">
-												<button type="button" class="card-tab__color"><img data-src="@img/novelties/colors/1.svg" alt=""></button>
-											</li>
-											<li>
-												<button type="button" class="card-tab__color"><img data-src="@img/novelties/colors/2.svg" alt=""></button>
-											</li>
-											<li>
-												<button type="button" class="card-tab__color"><img data-src="@img/novelties/colors/3.svg" alt=""></button>
-											</li>
-											<li>
-												<button type="button" class="card-tab__color"><img data-src="@img/novelties/colors/4.svg" alt=""></button>
-											</li>
-											<li>
-												<button type="button" class="card-tab__color"><img data-src="@img/novelties/colors/5.svg" alt=""></button>
-											</li>
-											<li>
-												<button type="button" class="card-tab__color"><img data-src="@img/novelties/colors/6.svg" alt=""></button>
-											</li>
-											<li>
-												<button type="button" class="card-tab__color"><img data-src="@img/novelties/colors/7.svg" alt=""></button>
-											</li>
-										</ul>
-										<button type="button" class="card-tab__counter">+6</button>
-									</div>
-									<div data-tabs-body class="card-tab__content">
-										<div class="card-tab__body">
-											<div class="card-tab__body-img">
-												<img data-src="@img/novelties/images/1.png" alt="">
-											</div>
-											<div class="card-tab__body-active">
-												<img data-src="@img/novelties/colors/1.svg" class="card-tab__body-active--small" alt="">
-												<span class="card-tab__body-active-text">beige</span>
-											</div>
-											<div class="card-tab__body-info card-tab__body-info--special">
-												<h2 class="card-tab__body-title">luxvisage</h2>
-												<!-- Прайс со скидкой -->
-												<div class="card-tab__body-price">
-													<div class="card-tab__body-price--new">120 mdl</div>
-													<div class="card-tab__body-price--old">209 mdl</div>
-												</div>
-												<div class="card-tab__body-text">Крем тональный skin evolution soft matte blur effect</div>
-											</div>
-										</div>
-										<div class="card-tab__body">
-											<div class="card-tab__body-img">
-												<img data-src="@img/novelties/images/2.png" alt="">
-											</div>
-											<div class="card-tab__body-active">
-												<img data-src="@img/novelties/colors/2.svg" class="card-tab__body-active--small" alt="">
-												<span class="card-tab__body-active-text">beige</span>
-											</div>
-											<div class="card-tab__body-info card-tab__body-info--special">
-												<h2 class="card-tab__body-title">luxvisage</h2>
-												<!-- Прайс со скидкой -->
-												<div class="card-tab__body-price">
-													<div class="card-tab__body-price--new">120 mdl</div>
-													<div class="card-tab__body-price--old">209 mdl</div>
-												</div>
-												<div class="card-tab__body-text">Крем тональный skin evolution soft matte blur effect</div>
-											</div>
-										</div>
-										<div class="card-tab__body">
-											<div class="card-tab__body-img">
-												<img data-src="@img/novelties/images/1.png" alt="">
-											</div>
-											<div class="card-tab__body-active">
-												<img data-src="@img/novelties/colors/3.svg" class="card-tab__body-active--small" alt="">
-												<span class="card-tab__body-active-text">beige</span>
-											</div>
-											<div class="card-tab__body-info card-tab__body-info--special">
-												<h2 class="card-tab__body-title">luxvisage</h2>
-												<!-- Прайс со скидкой -->
-												<div class="card-tab__body-price">
-													<div class="card-tab__body-price--new">120 mdl</div>
-													<div class="card-tab__body-price--old">209 mdl</div>
-												</div>
-												<div class="card-tab__body-text">Крем тональный skin evolution soft matte blur effect</div>
-											</div>
-										</div>
-										<div class="card-tab__body">
-											<div class="card-tab__body-img">
-												<img data-src="@img/novelties/images/2.png" alt="">
-											</div>
-											<div class="card-tab__body-active">
-												<img data-src="@img/novelties/colors/4.svg" class="card-tab__body-active--small" alt="">
-												<span class="card-tab__body-active-text">beige</span>
-											</div>
-											<div class="card-tab__body-info card-tab__body-info--special">
-												<h2 class="card-tab__body-title">luxvisage</h2>
-												<!-- Прайс со скидкой -->
-												<div class="card-tab__body-price">
-													<div class="card-tab__body-price--new">120 mdl</div>
-													<div class="card-tab__body-price--old">209 mdl</div>
-												</div>
-												<div class="card-tab__body-text">Крем тональный skin evolution soft matte blur effect</div>
-											</div>
-										</div>
-										<div class="card-tab__body">
-											<div class="card-tab__body-img">
-												<img data-src="@img/novelties/images/1.png" alt="">
-											</div>
-											<div class="card-tab__body-active">
-												<img data-src="@img/novelties/colors/5.svg" class="card-tab__body-active--small" alt="">
-												<span class="card-tab__body-active-text">beige</span>
-											</div>
-											<div class="card-tab__body-info card-tab__body-info--special">
-												<h2 class="card-tab__body-title">luxvisage</h2>
-												<!-- Прайс со скидкой -->
-												<div class="card-tab__body-price">
-													<div class="card-tab__body-price--new">120 mdl</div>
-													<div class="card-tab__body-price--old">209 mdl</div>
-												</div>
-												<div class="card-tab__body-text">Крем тональный skin evolution soft matte blur effect</div>
-											</div>
-										</div>
-										<div class="card-tab__body">
-											<div class="card-tab__body-img">
-												<img data-src="@img/novelties/images/2.png" alt="">
-											</div>
-											<div class="card-tab__body-active">
-												<img data-src="@img/novelties/colors/6.svg" class="card-tab__body-active--small" alt="">
-												<span class="card-tab__body-active-text">beige</span>
-											</div>
-											<div class="card-tab__body-info card-tab__body-info--special">
-												<h2 class="card-tab__body-title">luxvisage</h2>
-												<!-- Прайс со скидкой -->
-												<div class="card-tab__body-price">
-													<div class="card-tab__body-price--new">120 mdl</div>
-													<div class="card-tab__body-price--old">209 mdl</div>
-												</div>
-												<div class="card-tab__body-text">Крем тональный skin evolution soft matte blur effect</div>
-											</div>
-										</div>
-										<div class="card-tab__body">
-											<div class="card-tab__body-img">
-												<img data-src="@img/novelties/images/1.png" alt="">
-											</div>
-											<div class="card-tab__body-active">
-												<img data-src="@img/novelties/colors/7.svg" class="card-tab__body-active--small" alt="">
-												<span class="card-tab__body-active-text">beige</span>
-											</div>
-											<div class="card-tab__body-info card-tab__body-info--special">
-												<h2 class="card-tab__body-title">luxvisage</h2>
-												<!-- Прайс со скидкой -->
-												<div class="card-tab__body-price">
-													<div class="card-tab__body-price--new">120 mdl</div>
-													<div class="card-tab__body-price--old">209 mdl</div>
-												</div>
-												<div class="card-tab__body-text">Крем тональный skin evolution soft matte blur effect</div>
-											</div>
-										</div>
-										
-									</div>
-								</div>
-							</div>
-						</div>
+						<picture><source data-srcset="img/webmaster.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/webmaster.png" alt=""></picture>
 					</div>
 				</div>
-				<!-- Нижний слайдер -->
-				<div class="delmira">
-					<div class="delmira__container">
-						<!-- стрелки -->
-						<div class="delmira-slider-arrows">
-							<div class="delmira-slider-arrows__container">
-								<button type="button" class="bottom-slider-prev"></button>
-								<button type="button" class="bottom-slider-next"></button>
-							</div>
-						</div>
-						<!-- сам слайдер -->
-						<div class="delmira-slider">
-							<div class="delmira-slider__container">
-								<div class="bottom-slider swiper">
-									<!-- Двигающееся часть слайдера -->
-									<div class="bottom__container swiper-wrapper">
-										<!-- Слайд -->
-										<div class="bottom__slide swiper-slide">
-											<div class="bottom-slider__img">
-												<img data-src="@img/slider2/1.png" alt="">
-											</div>
-										</div>
-										<div class="bottom__slide swiper-slide">
-											<div class="bottom-slider__img">
-												<img data-src="@img/slider2/2.png" alt="">
-											</div>
-										</div>
-										<div class="bottom__slide swiper-slide">
-											<div class="bottom-slider__img">
-												<img data-src="@img/slider2/3.png" alt="">
-											</div>
-										</div>
-										<div class="bottom__slide swiper-slide">
-											<div class="slider__img">
-												<img data-src="@img/slider2/1.png" alt="">
-											</div>
-										</div>
-										<div class="bottom__slide swiper-slide">
-											<div class="bottom-slider__img">
-												<img data-src="@img/slider2/2.png" alt="">
-											</div>
-										</div>
-										<div class="bottom__slide swiper-slide">
-											<div class="bottom-slider__img">
-												<img data-src="@img/slider2/3.png" alt="">
-											</div>
-										</div>
-									</div>
-								</div>
-								<!-- Если нужна навигация (влево/вправо) -->
-							</div>
-						</div>
-					</div>
-					<div class="delmira-empty">
-					</div>
-				</div>
-				<!-- Форма отправки на почту -->
-				<div class="subscribe">
-					<div class="subscribe__container">
-						<form action="files/sendmail/sendmail.php" method="POST" class="subscribe__form">
-							<input type="text" name="form[email]" data-error="Error" placeholder="Укажите свой Email, чтобы первыми узнавать о новинках и специальных предложениях от delmira.md" class="subscribe__input">
-							<button type="submit" class="subscribe__button">Подписаться на рассылку <img data-src="@img/arrow-right.svg" alt=""></button>
-						</form>
-					</div>
-				</div>
-			</main>
-			@@include('html/_footer.htm',{})
+			</div>
+		</footer>
+	</div>
+	<!-- <div id="popup" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close">Закрыть</button>
+			<div class="popup__text">
+				Text
+			</div>
 		</div>
-		@@include('html/_popup.htm',{})
-		@@include('html/_js.htm',{})
-	</body>
+	</div>
+</div> -->
+	<script src="js/app.min.js?_v=20220802113008"></script>
+</body>
+
 </html>
